@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font awesome and google font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<!--IHE logo-->
+<div id="logo">
+    <h1>IHE Delft</h1>
+</div>
+<!--Navigation bar-->
+<div class="menu-bar">
+    <ul>
+        <li><a href="index.html">Home</a>
+        </li>
+        <li><a href="quiz.html" class="active">Quiz</a>
+        </li>
+        <li><a href="contact.html">Contact</a>
+        </li>
+    </ul>
+</div>
+<!--the main section of app which contains question app , quit button and next button-->
+<section>
+    <div class="question-container" id="question-box">
+        <div class="main-box">
+            <div class="question-heading">
+                <h2> Planet IQ Test </h2>
+            </div>
+        </div>
+        <!--Here is question element where will stor all the question -->
+        <div id="question" class="questions">
+        </div>
+        <!--Here is answer element where will stor all the answers -->
+        <div id="answer" class="answers">
+        </div>
+        <!--quit button and next button section -->
+        <div class="button">
+            <button id="quit-quiz" class="quit"> Quit </button>
+            <button id="next-question" class="submit"> Next </button>
+        </div>
+        <!--score card section(if the question is correct will increment to correct answer tally otherwise if wrong increment in incorrect answer tally-->
+        <div class="score">
+            <p class="points">Correct Answers: <span id="correct-answer">0</span></p>
+            <p class="points">Incorrect Answers: <span id="incorrect-answer">0</span></p>
+        </div>
+    </div>
+</section>
+<!--restart quiz section -->
+<div class="container restart-quiz " id="restart-quiz">
+    <div class="row">
+        <div class="col-12">
+            <div class="finish-text">
+                <p>You have Completed the Quiz </p>
+            </div>
+            <div id="score-card" class="final-score">
+            </div>
+            <div class="button">
+                <button id="restart-button">Play Again</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+
+    <h1 class="heading">
+        <img class="logo" src="assets/images/" alt="logo">Quiz Questions
+    </h1>
+    <div class="question-area">
+
+    </div>
+    <div class="score-area">
+        <p class="scores">Correct Answers <span id="score">0</span></p>
+        <p class="scores">Incorrect Answers<span id="incorrect">0</span></p>
+
+    </div>
+    -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
