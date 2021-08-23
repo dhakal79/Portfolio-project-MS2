@@ -160,4 +160,227 @@ body {
     font-size: 16px;
    
  }
+
+ 
+/*-----------quiz app section-----*/
+
+.question-containers{
+    position:absolute;
+    justify-content: center;
+    transform: translate(-50% ,-50%);
+    top:50%;
+    left: 50%;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    max-width:500px;
+   
+ }
+ .question-container{
+    position:absolute;
+    justify-content: center;
+    transform: translate(-50% ,-50%);
+    top:50%;
+    left: 50%;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    max-width:500px;
+    display:none;
+ }
+ 
+ .quit-class{
+    opacity: 0;
+    pointer-events: none;
+ }
+ 
+ .main-box{
+    display: flex;
+    border-bottom: 2px solid black;
+    text-align: center;
+    justify-content: center;
+    padding-top:10px;
+ }
+ 
+ .question-heading{
+    padding:10px;
+   
+ }
+ 
+ .questions{
+    padding:20px;
+    font-size: large;
+    padding-left:7px;
+   
+ }
+ 
+ .answer-option{
+    display:block;
+    padding:1px;
+    border: 2px solid black;
+    margin:10px;
+    background: #c2e59c; 
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  
+    background: linear-gradient(to right, #64b3f4, #c2e59c); 
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ .answer-option > p{
+   text-align: justify;
+ }
+ 
+ /* if the answer is correct color will be green */
+ 
+ .answer-option.green{
+    background:green;
+    color:white;
+    opacity:0.7 ;
+  
+ 
+ }
+ 
+ /* if the answer is incorrect color will be lightcoral */
+ 
+ .answer-option.red{
+    background: lightcoral;
+    color:white;
+  
+ }
+ 
+ .answer-option.unable-answer{
+    pointer-events: none;
+ 
+ }
+ 
+ .button{
+    display: flex;
+    margin-bottom:20px;
+    justify-content: center;
+    text-align: center;
+    margin-top:20px;
+ 
+ }
+ .submit{
+  
+    width:150px;
+    height:40px;
+    font-size:large;
+    background: #2c3e50; 
+    background: linear-gradient(to right, #3498db, #2c3e50); 
+    border-radius: 5px;
+    color:white;
+    border:none;
+    cursor:pointer;
+    margin:10px;
+    text-align:center;
+ }
+ 
+ .quit{
+    text-align: center;
+    margin:10px;
+    width:150px;
+    height:40px;
+    font-size:large;
+    background: #2c3e50; 
+    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  
+    background: linear-gradient(to right, #3498db, #2c3e50); 
+    border-radius: 5px;
+    color:white;
+    border:none;
+    cursor:pointer;
+ }
+ 
+ .submit:hover{
+    background:#64b3f4;
+   
+ }
+ 
+ .quit:hover{
+    background:#64b3f4;
+  
+ }
+ 
+ .score{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  
+ }
+ .points{
+    padding:10px;
+    text-align: center;
+    justify-content: center;
+ }
+ 
+  /*--restart quiz box--*/
+ /*
+ .restart-quiz{
+    display: none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    width:80%;
+    background-color: white;
+    max-width: 500px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10% ;
+    border-top-right-radius: 20px;
+ 
+ }
+ 
+ .restart_quiz{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    width:80%;
+    background-color: white;
+    max-width: 500px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10% ;
+    border-top-right-radius: 20px;
+ }
+ 
+ .finish-text{
+    padding:10px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color:black;
+    margin-top:20px;
+ 
+ }
+ 
+ .final-score{
+   display:flex;
+   color: black;
+   justify-content: center;
+   text-align: center;
+   font-weight: 500;
+ 
+ }
+ 
+ #restart-button{
+   text-align: center;
+   margin:10px;
+   width:150px;
+   height:40px;
+   font-size:large;
+   background: #2c3e50;  
+   background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  
+   background: linear-gradient(to right, #3498db, #2c3e50); 
+   border-radius: 5px;
+   color:white;
+   border:none;
+   cursor:pointer;
+ }
+ 
+ #restart-button:hover{
+   background:#64b3f4;
+   
+ } */
+ 
  
