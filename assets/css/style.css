@@ -104,3 +104,60 @@ body {
     outline-color: white;
      
  }
+
+ /*-------instruction section------*/
+ .instruction-box{
+    position:absolute;
+    justify-content: center;
+    transform: translate(-100% ,-100%);
+    top:80%;
+    left: 70%;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    max-width:800px;
+    display:none;
+ }
+ .instruction-box-1{
+    position:absolute;
+    justify-content: center;
+    transform: translate(-100% ,-100%);
+    top:80%;
+    left: 70%;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    max-width:800px;
+    
+ }
+ .quiz-rule h2{
+    text-align: center;
+    padding-top: 10px;
+    
+ }
+ 
+ .quiz-rule h4 {
+    text-align: center;
+   
+ }
+ 
+ .quiz-rule hr{
+    background-color: orangered;
+ }
+ 
+ .quiz_rule {
+    list-style: none;
+    font-weight: 500;
+    text-align: justify;
+    padding : 5px;
+ }
+ 
+ .quiz_rule li{
+    padding:5px;
+    
+ }
+ 
+ .best {
+    text-align: center;
+    font-size: 16px;
+   
+ }
+ 
