@@ -28,39 +28,30 @@ nextApp.addEventListener("click", function () {
 
 let questions = [{
     number: 1,
-    question: "Which of the following is a greenhouse gas?",
-    answers: ["CO2", "Methane", "Vapor Water", "Above All"],
-    correctAnswer: "Above All",
+    question: "The traditional treatment of surface water consisted of coagulant dosing, followed by floc formation-settling and rapid filtration?",
+    answers: ["False", "True", "None"],
+    correctAnswer: "false",
 },
 {
     number: 2,
-    question: "Which of these countries emits the most carbon dioxide?",
-    answers: ["China",
-        "USA",
-        "UK",
-        "Russia"
+    question: "Indicate possible locations of coagulation in the treatment train (more answers can be possible)",
+    answers: ["Before storage","Before filtration","Before ozonation","Before GAC"
     ],
-    correctAnswer: "China",
+    correctAnswer: "Before storage",
 },
 {
     number: 3,
-    question: "Which has been the hottest year on record ?",
-    answers: ["2016",
-        "2020",
-        "All of the above",
-        "None of the above"
+    question: "Which of the following chemicals is used as coagulant?",
+    answers: ["NaOH","KMNO4", "FeCl3","Ca(OH)2"
     ],
-    correctAnswer: "All of the above",
+    correctAnswer: "FeCl3",
 },
 {
     number: 4,
-    question: "which of the following sectors emits largest % of greenhouse gas?",
-    answers: ["Transportation",
-        "Buildings",
-        "Industry",
-        "Electricity and heat production"
+    question: "Jar tests are executed to determine optimal coagulant dose, pH and coagulant aid cose.",
+    answers: ["True","False","None",
     ],
-    correctAnswer: "Electricity and heat production",
+    correctAnswer: "True",
 },
 {
     number: 5,
