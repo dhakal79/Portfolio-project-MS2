@@ -171,6 +171,8 @@ let questions = [{
 
 ]
 
+
+
 // function to getting all the questions and answer options from array .
 
 const questionContent = document.getElementById("question");
@@ -194,3 +196,18 @@ function allQuestion(event) {
 allQuestion(0);
 let currentQuestion = 0;
 let totalScoreAchieved = 0;
+
+// next button function to click to go to next question.
+
+const nextButton = document.getElementById("next-question");
+
+nextButton.addEventListener("click", function () {
+    if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        allQuestion(currentQuestion);
+    } else {
+        console.log("successfully loaded");
+        quizFinalResult();
+    }
+
+});
