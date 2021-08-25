@@ -1,3 +1,11 @@
+// nanimation front page
+const hero = document.querySelector('.hero')
+const headline = document.querySelector('.headline')
+
+const tl = new TimelineMax();
+tl. fromTo(hero, 1, {height: "0%"}, {height: "70%"});
+
+
 //  targeting  main variables and id´s of home page and quiz box
 const startButton = document.getElementById("btn-start-quiz");
 const questionBox = document.getElementById("question-box");
@@ -202,3 +210,4 @@ nextButton.addEventListener("click", function () {
     }
 
 });
+
