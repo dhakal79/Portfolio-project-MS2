@@ -162,6 +162,19 @@ let questions = [{
 
 ]
 
+// targeting timer in the questions
+const timeH = document.querySelector('h3');
+let timeSecond = 300;
+
+timeH.innerHTML = timeSecond;
+
+const countDown = setInterval(()=>{
+    timeSecond--;
+    timeH.innerHTML = timeSecond;
+    if (timeSecond <0 || timeSecond<1){
+        clearInterval(countDown);
+    }
+},1000)
 
 
 // function to getting all the questions and answer options from array .
@@ -202,4 +215,5 @@ nextButton.addEventListener("click", function () {
     }
 
 });
+
 
