@@ -83,6 +83,7 @@ body {
    width: 100%;
    height: 100%;
    object-fit: cover;
+   
 }
 .headline{
    position: absolute;
@@ -447,4 +448,12 @@ footer {
 }
 .social-media a {
    text-decoration: none;
+}
+
+span{
+   transition: all 0.5s ease;
+   
+}
+span.fade{
+   color: #3498db;
 }
