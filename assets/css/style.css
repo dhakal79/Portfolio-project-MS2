@@ -12,6 +12,7 @@
 body {
     font-size: 15px;
     /*background-image:url(../images/coagulation.jpg);*/
+    background-color: #b7bbb2;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -109,16 +110,18 @@ body {
     color: white;
     letter-spacing: 3px;
     position: absolute;
-    top:400px;
+    top:250px;
     justify-content: center;
     text-transform: capitalize;
-    margin-left: 600px;
+    margin-left: 700px;
    
 }
 
 .main-header{
-    font-size: larger; 
+    font-size: 24px; 
     line-height: 2;
+    color: blue;
+   
   
  }
  
@@ -134,6 +137,7 @@ body {
     border:none;
     cursor: pointer;
     margin-top: 50px;
+   
  }
  
  .btn-quiz:hover{
@@ -149,18 +153,18 @@ body {
     justify-content: center;
     transform: translate(-100% ,-100%);
     top:80%;
-    left: 70%;
+    left: 40%;
     border-radius: 10px;
     background-color: whitesmoke;
-    max-width:800px;
+    max-width:1000px;
     display:none;
  }
  .instruction-box-1{
     position:absolute;
     justify-content: center;
     transform: translate(-100% ,-100%);
-    top:80%;
-    left: 70%;
+    top:70%;
+    left: 65%;
     border-radius: 10px;
     background-color: whitesmoke;
     max-width:800px;
@@ -206,11 +210,11 @@ body {
     position:absolute;
     justify-content: center;
     transform: translate(-50% ,-50%);
-    top:50%;
+    top:45%;
     left: 50%;
     border-radius: 10px;
     background-color: whitesmoke;
-    max-width:500px;
+    min-width: 800px;
    
  }
  .question-container{
