@@ -106,7 +106,7 @@ body {
 }
 
 
-.main-container{
+.quiz-heading{
     text-align: center; 
     color: white;
     letter-spacing: 3px;
@@ -318,7 +318,7 @@ body {
     text-align:center;
  }
  
- .quit{
+ .back{
     text-align: center;
     margin:10px;
     width:150px;
@@ -338,7 +338,7 @@ body {
    
  }
  
- .quit:hover{
+ .back:hover{
     background:#64b3f4;
   
  }

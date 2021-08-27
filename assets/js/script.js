@@ -1,5 +1,5 @@
 //  targeting  main variables and id´s of home page and quiz box
-const startButton = document.getElementById("btn-start-quiz");
+const startButton = document.getElementById("btn-quiz-rule");
 const questionBox = document.getElementById("question-box");
 const previousQuestion = document.getElementById("previous-question");
 const nextQuestion = document.getElementById("next-question");
