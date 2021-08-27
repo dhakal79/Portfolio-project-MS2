@@ -12,7 +12,7 @@
 body {
     font-size: 15px;
     /*background-image:url(../images/coagulation.jpg);*/
-    background-color: #b7bbb2;
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -111,10 +111,9 @@ body {
     color: white;
     letter-spacing: 3px;
     position: absolute;
-    top:250px;
+    top:170px;
     justify-content: center;
-    text-transform: capitalize;
-    margin-left: 700px;
+    margin-left: 600px;
    
 }
 
@@ -153,7 +152,7 @@ body {
     position:absolute;
     justify-content: center;
     transform: translate(-100% ,-100%);
-    top:80%;
+    top: 100%;
     left: 40%;
     border-radius: 10px;
     background-color: whitesmoke;
@@ -164,11 +163,11 @@ body {
     position:absolute;
     justify-content: center;
     transform: translate(-100% ,-100%);
-    top:70%;
+    top:65%;
     left: 65%;
     border-radius: 10px;
     background-color: whitesmoke;
-    max-width:800px;
+    max-width:1000px;
     
  }
  .quiz-rule h2{
@@ -176,6 +175,7 @@ body {
     padding-top: 20px;
     margin-bottom: 20px;
     color: black;
+   
     
  }
   
@@ -196,6 +196,7 @@ body {
     padding:15px;
     line-height: 15px;
     margin-left: 20px;
+    font-size: 15px;
     
  }
  
@@ -212,20 +213,21 @@ body {
 .question-containers{
     position:absolute;
     justify-content: center;
-    transform: translate(-50% ,-50%);
-    top:45%;
-    left: 50%;
+    transform: translate(-60% ,-60%);
+    top:50%;
+    left: 55%;
     border-radius: 10px;
     background-color: whitesmoke;
-    min-width: 800px;
+    min-width: 850px;
+    min-height: 500px;
    
  }
  .question-container{
     position:absolute;
     justify-content: center;
-    transform: translate(-50% ,-50%);
+    transform: translate(-60% ,-60%);
     top:50%;
-    left: 50%;
+    left: 55%;
     border-radius: 10px;
     background-color: whitesmoke;
     max-width:500px;
@@ -254,17 +256,16 @@ body {
     padding:20px;
     font-size: large;
     padding-left:7px;
+    line-height: 25px;
    
  }
  
  .answer-option{
     display:block;
-    padding:1px;
-    border: 2px solid black;
-    margin:10px;
-    background: #c2e59c; 
-    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  
-    background: linear-gradient(to right, #64b3f4, #c2e59c); 
+    padding:8px;
+    border: 2px solid rgb(7, 7, 7);
+    margin:15px;
+    background: #d6e0e0; 
     border:none;
     border-radius: 5px;
     cursor: pointer;
