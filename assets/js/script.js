@@ -164,7 +164,7 @@ let questions = [{
 
 // targeting timer in the questions
 const timeH = document.querySelector('h3');
-let timeSecond = 300;
+let timeSecond = 200;
 
 timeH.innerHTML = timeSecond;
 
