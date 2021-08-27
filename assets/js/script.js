@@ -231,3 +231,54 @@ previousButton.addEventListener("click", function () {
     }
 
 });
+
+
+// select answer option if the answer is correct do x and if the answer is incorrect do y.
+
+function selectedAnswers(correctAnswer) {
+    let givenAnswer = correctAnswer.innerText;
+    let goodAnswer = questions[currentQuestion].correctAnswer;
+    let allAnswers = answerContent.children.length;
+    if (givenAnswer === goodAnswer) {
+        totalScoreAchieved += 1;
+        // if the user answer is correct green color background  will pop up inside the answer box.
+        correctAnswer.classList.add("green");
+        incrementScore();
+    } else {
+        // if the user answer is incorrect red color background  will pop up inside the answer box.
+        correctAnswer.classList.add("red");
+        incrementWrongAnswer();
+
+        //if the user answer is incorrect ! correct answer will  automatically pop up with green highlight.
+
+        for (let x = 0; x < allAnswers; x++) {
+            if (answerContent.children[x].innerText === goodAnswer) {
+                answerContent.children[x].classList.add("green");
+            }
+
+        }
+
+    }
+
+    // user can click just one answer ! once user clicked,the rest of the answers will unable to click.
+    for (let x = 0; x < allAnswers; x++) {
+        answerContent.children[x].classList.add("unable-answer");
+    }
+
+}
+
+// getting  score of correct answer and increment in to correct Answers element.
+
+function incrementScore() {
+
+    var currentScore = parseInt(document.getElementById("correct-answer").innerText);
+    document.getElementById("correct-answer").innerText = ++currentScore;
+}
+
+// Getting score of incorrect answer and increment in to incorrect Answers element.
+
+function incrementWrongAnswer() {
+
+    var currentScore = parseInt(document.getElementById("incorrect-answer").innerText);
+    document.getElementById("incorrect-answer").innerText = ++currentScore;
+}
