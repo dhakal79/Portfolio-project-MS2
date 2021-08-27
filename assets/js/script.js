@@ -1,7 +1,7 @@
 //  targeting  main variables and id´s of home page and quiz box
 const startButton = document.getElementById("btn-start-quiz");
 const questionBox = document.getElementById("question-box");
-const quitQuiz = document.getElementById("quit-quiz");
+const previousQuestion = document.getElementById("previous-question");
 const nextQuestion = document.getElementById("next-question");
 const instructionBox = document.getElementById("instruction_box")
 const nextApp = document.getElementById("next-app");
@@ -192,8 +192,8 @@ function allQuestion(event) {
         `<div class="answer-option" >` + `<p>` + questions[event].answers[3] + `</P></div>`;
     answerContent.innerHTML = answerOption;
 
-    for (let x = 0; x < selectedAnswer.length; x++) {
-        selectedAnswer[x].setAttribute("onclick", "selectedAnswers(this)");
+    for (let i = 0; i < selectedAnswer.length; i++) {
+        selectedAnswer[i].setAttribute("onclick", "selectedAnswers(this)");
     }
 }
 
@@ -217,3 +217,17 @@ nextButton.addEventListener("click", function () {
 });
 
 
+// previous button function to click to go to previous question.
+
+const previousButton = document.getElementById("previous-question");
+
+previousButton.addEventListener("click", function () {
+    if (currentQuestion < questions.length - 1) {
+        currentQuestion--;
+        allQuestion(currentQuestion);
+    } else {
+        console.log("successfully loaded");
+        quizFinalResult();
+    }
+
+});
