@@ -69,7 +69,7 @@ body {
    align-items: center;
 }
 .hero{
-   height: 70%;
+   height: 85%;
    width: 80%;
    position: relative;
 }
@@ -111,10 +111,11 @@ body {
    
 }
 
-.main-header{
-    font-size: 24px; 
-    line-height: 2;
-    color: blue;
+.quiz-heading h1{
+    font-size: 20px; 
+    line-height: 1.5;
+    color: black;
+    text-align: center;
    
   
  }
@@ -130,7 +131,7 @@ body {
     border-radius: 5px;
     border:none;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 200px;
    
  }
  
@@ -425,10 +426,6 @@ body {
  
  /* footer */
 
-footer {
-   height: 100px;
-}
-
 .social-media {
    text-align: center;
 }
@@ -498,7 +495,7 @@ h3{
 .quiz-heading{
    margin-left: 0px;
 }
-.main-header{
+.quiz-heading h1{
    margin-left: 40px;
 }
 .instruction-box-1 {
@@ -540,7 +537,7 @@ h3{
 .question-containers {
    transform: translate(-0% ,-0%); 
    top: 25%; 
-   left: 5%; 
+   left: 10%; 
    right: 5%;
    width: 320px;
    height: 425px;
@@ -548,7 +545,7 @@ h3{
 h3{
    margin-left: 60px;
 }
-.main-header{
+.quiz-heading h1{
    font-size: 20px;
 }
 }
