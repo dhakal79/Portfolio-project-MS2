@@ -162,7 +162,7 @@ body {
     left: 65%;
     border-radius: 10px;
     background-color: whitesmoke;
-    max-width:1000px;
+    max-width:justify;
     
  }
  .quiz-rule h2{
@@ -211,8 +211,8 @@ body {
     left: 55%;
     border-radius: 10px;
     background-color: whitesmoke;
-    width: 720px;
-    min-height: 500px;
+    width: justify;
+    height: justify;
    
  }
  .question-container{
@@ -223,7 +223,7 @@ body {
     left: 55%;
     border-radius: 10px;
     background-color: whitesmoke;
-    max-width:500px;
+    width:justify;
     display:none;
  }
  
@@ -480,8 +480,8 @@ h3{
    top: 18%; 
    left: 15%; 
    right: 15%;
-   min-width: 720px;
-   min-height: 0px;
+   width: justify;
+   height: justify;
    }
 h3{
    margin-left: 650px;

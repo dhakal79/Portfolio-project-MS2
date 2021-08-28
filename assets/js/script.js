@@ -267,18 +267,20 @@ function selectedAnswers(correctAnswer) {
 
 }
 
-// getting  score of correct answer and increment in to correct Answers element.
+// Gets the current score of correct answers from the DOM and increments it
 
 function incrementScore() {
 
-    var currentScore = parseInt(document.getElementById("correct-answer").innerText);
-    document.getElementById("correct-answer").innerText = ++currentScore;
+    let currentScore = parseInt(document.getElementById("correct-answer").innerText);
+	document.getElementById("correct-answer").innerText = ++currentScore;
+
 }
 
-// Getting score of incorrect answer and increment in to incorrect Answers element.
-
+// Gets the current score of incorrect answers from the DOM and increments it
 function incrementWrongAnswer() {
 
-    var currentScore = parseInt(document.getElementById("incorrect-answer").innerText);
-    document.getElementById("incorrect-answer").innerText = ++currentScore;
+	let currentScore = parseInt(document.getElementById("incorrect-answer").innerText);
+	document.getElementById("incorrect-answer").innerText = ++currentScore;
+
 }
+
