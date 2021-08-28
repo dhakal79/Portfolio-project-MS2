@@ -17,8 +17,6 @@ body {
     background-size: cover;
     overflow: hidden;
     background-position: center;
-    height: 50vh;
-    width:100vw;
     font-family: lato, sans-serif;
     font-weight: bold;
     color: #3a3a3a;
@@ -218,7 +216,7 @@ body {
     left: 55%;
     border-radius: 10px;
     background-color: whitesmoke;
-    min-width: 850px;
+    width: 850px;
     min-height: 500px;
    
  }
@@ -467,4 +465,75 @@ h3{
    margin-left: 700px;
    color: blue;
    font-size: 1.5rem;
+}
+
+/* media querries */
+
+/*For screen size larger than 993px */
+
+@media screen and (min-width: 993px) and (max-width: 1400px) {
+.quiz-heading{
+   margin-left: 150px;
+   top: 100px;
+} 
+.instruction-box-1 {
+   transform: translate(-0% ,-0%);
+   top: 15%;
+   left: 10%;
+   right: 10%;
+}
+.question-containers {
+   transform: translate(-0% ,-0%); 
+   top: 13%; 
+   left: 5%; 
+   right: 5%;
+   min-width: 0px;
+   min-height: 0px;
+   }
+}
+
+/* media querries */
+
+/*For tablet screen size from 768 -992 px */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+     /* Quiz page */
+.quiz-heading{
+   margin-left: 0px;
+}
+.main-header{
+   margin-left: 40px;
+}
+.instruction-box-1 {
+      transform: translate(-0% ,-0%);
+      top: 25%;
+      left: 10%;
+      right: 10%;
+}
+.question-containers {
+   transform: translate(-0% ,-0%); 
+   top: 15%; 
+   left: 5%; 
+   right: 5%;
+   min-width: 0px;
+   }
+}
+
+/*For screen size max width 767 px */
+
+@media screen and (max-width: 767px) {
+
+   /* Quiz page */
+
+   .quiz-heading{
+      margin-left: 0px;
+   }
+
+   .instruction-box-1 {
+      transform: translate(-0% ,-0%);
+      top: 45%;
+      left: 10%;
+      right: 10%;
+}
 }
