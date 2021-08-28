@@ -264,6 +264,7 @@ body {
     border:none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
  }
  
  .answer-option > p{
@@ -500,21 +501,31 @@ h3{
 }
 .instruction-box-1 {
       transform: translate(-0% ,-0%);
-      top: 25%;
-      left: 10%;
-      right: 10%;
+      top: 50%;
+      left: 20%;
+      right: 25%;
 }
 .question-containers {
    transform: translate(-0% ,-0%); 
    top: 15%; 
-   left: 5%; 
+   left: 10%; 
    right: 5%;
    width: 700px;
-   height: 100%;
    margin-right: 250px;
    }
    h3{
       margin-left: 500px;
+   }
+   .quiz-heading h1{
+      font-size: 20px;
+      text-align: center;
+      padding: 20px;
+      margin-top: 5px;
+      margin-left: 120px;
+      margin-right: 20px;
+   }
+   .btn-quiz{
+      margin-left: 70px;
    }
    }
 
