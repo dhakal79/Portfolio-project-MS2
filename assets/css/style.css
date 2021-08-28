@@ -13,10 +13,6 @@ body {
     font-size: 15px;
     /*background-image:url(../images/coagulation.jpg);*/
     background-color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    background-position: center;
     font-family: lato, sans-serif;
     font-weight: bold;
     color: #3a3a3a;
@@ -516,9 +512,14 @@ h3{
    top: 15%; 
    left: 5%; 
    right: 5%;
-   min-width: 0px;
+   width: 700px;
+   height: 100%;
+   margin-right: 250px;
    }
-}
+   h3{
+      margin-left: 500px;
+   }
+   }
 
 /*For screen size max width 767 px */
 
@@ -536,4 +537,19 @@ h3{
       left: 10%;
       right: 10%;
 }
+.question-containers {
+   transform: translate(-0% ,-0%); 
+   top: 25%; 
+   left: 5%; 
+   right: 5%;
+   width: 320px;
+   height: 425px;
+   }
+h3{
+   margin-left: 60px;
 }
+.main-header{
+   font-size: 20px;
+}
+}
+
