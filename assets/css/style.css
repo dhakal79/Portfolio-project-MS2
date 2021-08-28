@@ -531,7 +531,7 @@ h3{
 
    .instruction-box-1 {
       transform: translate(-0% ,-0%);
-      top: 45%;
+      top: 35%;
       left: 10%;
       right: 10%;
 }
@@ -541,16 +541,15 @@ h3{
    left: 10%; 
    right: 5%;
    width: 320px;
-   height: 425px;
+   
    }
 h3{
-   margin-left: 60px;
+   margin-left: 50px;
 }
 .quiz-heading h1{
    font-size: 15px;
    margin-top: 40px;
    text-align: center;
-   width: 350px;
    margin-left: 20px;
    margin-right: 20px;
 }
