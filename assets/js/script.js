@@ -260,10 +260,10 @@ function quizFinalResult() {
     questionBox.setAttribute("class", "hide");
     restartQuiz.setAttribute("class", "restart_quiz");
     let finalScore = document.getElementById("score-card");
-    if (totalScoreAchieved > 13) {
+    if (totalScoreAchieved > 3) {
         finalScore.innerHTML =
             `<span>` + `Well done!!! You master the topic! <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`;
-    } else if (totalScoreAchieved >= 7) {
+    } else if (totalScoreAchieved >= 2) {
         finalScore.innerHTML =
             `<span>` + `Congratulation on completing the quiz! <br><span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> <br> Good luck for better result next time !</span>`;
     
