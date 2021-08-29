@@ -258,26 +258,24 @@ function incrementWrongAnswer() {
 
 // This section belongs to result box which will show user scores and beneath score one button which will lead user back to Home page.
 
-const restartQuiz = document.getElementById("restart-quiz");
-const restartButton = document.getElementById("restart-button");
+const restartQuiz = document.getElementById("try-quiz-again");
+const restartButton = document.getElementById("restart-quiz");
 
 function quizFinalResult() {
     questionBox.classList.remove("question-containers");
     questionBox.setAttribute("class", "quit-class");
     restartQuiz.setAttribute("class", "restart_quiz");
     let finalScore = document.getElementById("score-card");
-    if (totalScoreAchieved > 12) {
+    if (totalScoreAchieved > 13) {
         finalScore.innerHTML =
-            `<span>` + `Excellent You are rock ! <br> Please share your knowledge with <br> others to save our planet <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`;
-    } else if (totalScoreAchieved >= 8) {
+            `<span>` + `Well done!!! You master the topic! <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`;
+    } else if (totalScoreAchieved >= 7) {
         finalScore.innerHTML =
-            `<span>` + `Congratulation you got! <br><span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> <br> Good Luck & Try Again  !</span>`;
-    } else if (totalScoreAchieved < 7) {
-        finalScore.innerHTML =
-            `<span>` + ` Aho ! You Got <br> <span>` + totalScoreAchieved + `</span> Out Of <span>` + questions.length + `</span> <br> Good Luck & Try Again !</span>`;
+            `<span>` + `Congratulation on completing the quiz! <br><span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> <br> Good luck for better result next time !</span>`;
+    
     } else {
         finalScore.innerHTML =
-            `<span>` + ` Aho ! You Got <br> <span>` + totalScoreAchieved + `</span> Out Of <span>` + questions.length + `</span> <br> Good Luck & Try Again  !</span>`;
+            `<span>` + ` Too bad ! You need to study more <br> <span>` + totalScoreAchieved + `</span> Out Of <span>` + questions.length + `</span> <br> Take time to study in depth and try again!  !</span>`;
     }
 
 }

@@ -384,7 +384,7 @@ body {
     border-top-right-radius: 20px;
  }
  
- .finish-text{
+ .message{
     padding:10px;
     font-size: 20px;
     text-align: center;
@@ -394,7 +394,7 @@ body {
  
  }
  
- .final-score{
+ .final-result{
    display:flex;
    color: black;
    justify-content: center;
@@ -403,7 +403,7 @@ body {
  
  }
  
- #restart-button{
+ #restart-quiz{
    text-align: center;
    margin:10px;
    width:150px;
