@@ -103,7 +103,7 @@ let questions = [{
 },
 {
     number: 13,
-    question: "What percentage of the global greenhouse gas emissions does the transportation sector emit?",
+    question: "",
     answers: ["20%",
         "14%",
         "50%",
@@ -113,23 +113,15 @@ let questions = [{
 },
 {
     number: 14,
-    question: "When you hear it’s unusually hot today, is that about the climate or weather?",
-    answers: ["Climate",
-        "weather",
-        "None",
-        "All of the above"
-    ],
-    correctAnswer: "weather",
+    question: "",
+    answers: ["a","b","c", "d"],
+    correctAnswer: "d",
 },
 {
     number: 15,
-    question: " When was the last time in Earth's history that CO2 was as high as it is now?",
-    answers: ["This is the highest it's ever been",
-        "The last time CO2 was this high was 3 million years ago.",
-        "None",
-        "All of the above"
-    ],
-    correctAnswer: "The last time CO2 was this high was 3 million years ago.",
+    question: " ",
+    answers: ["a","b","c", "d"],
+    correctAnswer: "d",
 },
 
 ]
