@@ -138,11 +138,11 @@ let questions = [{
 const timeH = document.querySelector('h3');
 let timeSecond = 200;
 
-timeH.innerHTML = timeSecond;
+timeH.innerHTML = timeSecond; 
 
 const countDown = setInterval(()=>{
     timeSecond--;
-    timeH.innerHTML = timeSecond;
+    timeH.innerHTML = `${timeSecond} sec time remaining`; //timeSecond + ' sec time remaining';
     if (timeSecond <0 || timeSecond<1){
         clearInterval(countDown);
     }
@@ -158,10 +158,11 @@ const selectedAnswer = document.getElementsByClassName("answer-option");
 function allQuestion(event) {   
     let createTag = document.createElement("p").innerHTML = questions[event].number + ")" + " " + questions[event].question;
     questionContent.innerHTML = createTag;
+    const lastAns = questions[event].answers[3] ? `<div class="answer-option" >` + `<p>` + questions[event].answers[3] + `</P></div>` : ""
     let answerOption = `<div class="answer-option">` + `<p>` + questions[event].answers[0] + `</P></div>` +
         `<div class="answer-option">` + `<p>` + questions[event].answers[1] + `</P></div>` +
         `<div class="answer-option"> ` + `<p>` + questions[event].answers[2] + `</P></div>` +
-        `<div class="answer-option" >` + `<p>` + questions[event].answers[3] + `</P></div>`;
+        lastAns;
     answerContent.innerHTML = answerOption;
 
     for (let i = 0; i < selectedAnswer.length; i++) {
