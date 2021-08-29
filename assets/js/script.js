@@ -275,7 +275,7 @@ function quizFinalResult() {
     
     } else {
         finalScore.innerHTML =
-            `<span>` + ` Too bad ! You need to study more <br> <span>` + totalScoreAchieved + `</span> Out Of <span>` + questions.length + `</span> <br> Take time to study in depth and try again!  !</span>`;
+            `<span>` + ` Too bad ! You need to study more <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> Out Of <span>` + questions.length + `</span> <br> Take time to study in depth and try again!  !</span>`;
     }
 
 }
