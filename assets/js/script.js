@@ -21,7 +21,7 @@ startButton.addEventListener("click", function () {
 nextApp.addEventListener("click", function () {
     instructionBox.classList.remove("instruction-box-1");
     questionBox.setAttribute("class", "question-containers");
-    instructionBox.setAttribute("class", "quit-class");
+    instructionBox.classList.add("hide");
 })
 
 // Array of Questions and Answers.
@@ -30,7 +30,7 @@ let questions = [{
     number: 1,
     question: "The traditional treatment of surface water consisted of coagulant dosing, followed by floc formation-settling and rapid filtration?",
     answers: ["False", "True", "None"],
-    correctAnswer: "false",
+    correctAnswer: "False",
 },
 {
     number: 2,
@@ -155,7 +155,7 @@ const questionContent = document.getElementById("question");
 var answerContent = document.getElementById("answer");
 const selectedAnswer = document.getElementsByClassName("answer-option");
 
-function allQuestion(event) {
+function allQuestion(event) {   
     let createTag = document.createElement("p").innerHTML = questions[event].number + ")" + " " + questions[event].question;
     questionContent.innerHTML = createTag;
     let answerOption = `<div class="answer-option">` + `<p>` + questions[event].answers[0] + `</P></div>` +
@@ -183,6 +183,7 @@ nextButton.addEventListener("click", function () {
         allQuestion(currentQuestion);
     } else {
         console.log("successfully loaded");
+            questionBox.classList.add("hide");
         quizFinalResult();
     }
 
@@ -263,7 +264,7 @@ const restartButton = document.getElementById("restart-quiz");
 
 function quizFinalResult() {
     questionBox.classList.remove("question-containers");
-    questionBox.setAttribute("class", "quit-class");
+    questionBox.setAttribute("class", "hide");
     restartQuiz.setAttribute("class", "restart_quiz");
     let finalScore = document.getElementById("score-card");
     if (totalScoreAchieved > 13) {

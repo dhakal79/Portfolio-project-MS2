@@ -227,9 +227,8 @@ body {
     display:none;
  }
  
- .quit-class{
-    opacity: 1;
-    pointer-events: none;
+ .hide{
+    display: none;
  }
  
  .main-box{
