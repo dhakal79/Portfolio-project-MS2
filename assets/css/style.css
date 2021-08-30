@@ -149,7 +149,7 @@ body {
     left: 40%;
     border-radius: 10px;
     background-color: whitesmoke;
-    max-width:1000px;
+    max-width:500px;
     display:none;
  }
  .instruction-box-1{
@@ -160,7 +160,7 @@ body {
     left: 65%;
     border-radius: 10px;
     background-color: whitesmoke;
-    max-width:1000px;
+    max-width:500px;
     
  }
  .quiz-rule h2{
