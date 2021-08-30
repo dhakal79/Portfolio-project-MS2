@@ -478,13 +478,13 @@ span.fade{
    left: 15%;
    right: 15%;
 }
-.question-containers {
+.question-baskets {
    transform: translate(-0% ,-0%); 
    top: 18%; 
    left: 15%; 
    right: 15%;
-   width: justify;
-   height: justify;
+   width: 500px;
+   height: 500px;
    }
 
 h3{
@@ -511,12 +511,12 @@ h3{
       left: 20%;
       right: 25%;
 }
-.question-containers {
+.question-baskets {
    transform: translate(-0% ,-0%); 
    top: 15%; 
    left: 10%; 
    right: 5%;
-   width: 700px;
+   width: 500px;
    margin-right: 250px;
    }
    h3{
@@ -552,7 +552,7 @@ h3{
       left: 10%;
       right: 10%;
 }
-.question-containers {
+.question-baskets {
    transform: translate(-0% ,-0%); 
    top: 25%; 
    left: 10%; 
