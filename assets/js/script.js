@@ -13,7 +13,7 @@ const nextApp = document.getElementById("next-app");
 startButton.addEventListener("click", function () {
     questionBox.classList.remove("question-containers");
     instructionBox.setAttribute("class", "instruction-box-1");
-    $(".main-container").hide();
+    //$(".main-container").hide();
 })   
 
 //  adding addEventfunction ( targeting the start quiz button inside instruction box  )
@@ -166,14 +166,15 @@ allQuestion(0);
 let currentQuestion = 0;
 let totalScoreAchieved = 0;
 
+
 // next button function to click to go to next question.
 
 const nextButton = document.getElementById("next-question");
-
 nextButton.addEventListener("click", function () {
-    if (currentQuestion < questions.length - 1) {
+      if (currentQuestion < questions.length - 1) {
         currentQuestion++;
         allQuestion(currentQuestion);
+        
     } else {
         console.log("successfully loaded");
             questionBox.classList.add("hide");
@@ -181,7 +182,6 @@ nextButton.addEventListener("click", function () {
     }
 
 });
-
 
 // previous button function to click to go to previous question.
 
