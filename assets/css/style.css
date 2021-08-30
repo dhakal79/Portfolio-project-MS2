@@ -61,8 +61,8 @@ body {
     color: #fff;
 }
 
-
-#abc{
+/* hero image */
+#hero-image{
    display: flex;
    height: 80vh;
    justify-content: center;
@@ -99,50 +99,48 @@ body {
    top: 0;
 }
 
+/*quiz title heading and button for quiz instruction */
 
 .quiz-heading{
     text-align: center; 
     color: white;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     position: absolute;
-    top:170px;
+    top:190px;
     justify-content: center;
-    margin-left: 600px;
+    margin-left: 700px;
    
 }
 
 .quiz-heading h1{
-    font-size: 20px; 
-    line-height: 1.5;
+    font-size: 18px; 
     color: white;
     text-align: center;
-   
-  
+    
  }
  
  .btn-quiz{
     width: 150px;
     height:40px;
-    text-align: center;
-    font-size:20px ;
-    background-color:#0099F7;
-    color:white;
-    letter-spacing: 2px;
     border-radius: 5px;
     border:none;
+    background-color:#0099F7;
+    font-size: 18px ;
+    text-align: center;      
+    color:white;
+    letter-spacing: 2px;
     cursor: pointer;
     margin-top: 200px;
    
  }
  
  .btn-quiz:hover{
-    color:#4CA1AF;
+    color: rgb(0, 153, 255);
     background-color: white;
-    outline-color: white;
-     
+        
  }
 
- /*-------instruction section------*/
+ /*-------quize rule instruction section------*/
  .instruction-box{
     position:absolute;
     justify-content: center;
@@ -173,37 +171,34 @@ body {
    
     
  }
-   
- .quiz-rule hr{
-    background-color: orangered;
- }
- 
- .quiz_rule {
+/*    
+ .quiz-instruction {
     list-style: none;
     font-weight: 500;
     text-align: justify;
     padding : 5px;
  }
- 
- .quiz_rule li{
-    padding:15px;
-    line-height: 15px;
-    margin-left: 20px;
+ */
+ .quiz-instruction li{
     font-size: 15px;
-    
+    padding:10px;
+    line-height: 15px;
+    margin-left: 25px;
+    list-style: none;  
  }
  
  .best {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 20px;
+    color: green;
    
  }
 
  
-/*-----------quiz app section-----*/
+/*section for questions, next and previous buttons----*/
 
-.question-containers{
+.question-baskets{
     position:absolute;
     justify-content: center;
     transform: translate(-60% ,-60%);
@@ -215,7 +210,7 @@ body {
     height: justify;
    
  }
- .question-container{
+ .question-basket{
     position:absolute;
     justify-content: center;
     transform: translate(-60% ,-60%);
@@ -230,10 +225,12 @@ body {
  .hide{
     display: none;
  }
+
+
  
- .main-box{
+ .main-question-container{
     display: flex;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid rgb(4, 100, 76);
     text-align: center;
     justify-content: center;
     padding-top:10px;
@@ -243,6 +240,13 @@ body {
     padding:10px;
    
  }
+/* timer */
+ h3{
+   float: right;
+   margin-left: 590px;
+   color: rgb(230, 7, 7);
+   font-size: 1.2rem;
+}
  
  .questions{
     padding:20px;
@@ -456,12 +460,7 @@ span.fade{
 }
 
 
-h3{
-   float: right;
-   margin-left: 700px;
-   color: blue;
-   font-size: 1.5rem;
-}
+
 
 /* media querries */
 
@@ -487,6 +486,7 @@ h3{
    width: justify;
    height: justify;
    }
+
 h3{
    margin-left: 650px;
 }

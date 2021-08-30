@@ -3,15 +3,15 @@ const startButton = document.getElementById("btn-quiz-rule");
 const questionBox = document.getElementById("question-box");
 const previousQuestion = document.getElementById("previous-question");
 const nextQuestion = document.getElementById("next-question");
-const instructionBox = document.getElementById("instruction_box")
-const nextApp = document.getElementById("next-app");
+const instructionBox = document.getElementById("box")
+const nextApp = document.getElementById("start-quiz");
 
 
 
 // adding addEventfunction (when the start button clicked)
 
 startButton.addEventListener("click", function () {
-    questionBox.classList.remove("question-containers");
+    questionBox.classList.remove("question-baskets");
     instructionBox.setAttribute("class", "instruction-box-1");
     //$(".main-container").hide();
 })   
@@ -20,7 +20,7 @@ startButton.addEventListener("click", function () {
 
 nextApp.addEventListener("click", function () {
     instructionBox.classList.remove("instruction-box-1");
-    questionBox.setAttribute("class", "question-containers");
+    questionBox.setAttribute("class", "question-baskets");
     instructionBox.classList.add("hide");
 })
 
