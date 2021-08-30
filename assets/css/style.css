@@ -160,7 +160,7 @@ body {
     left: 65%;
     border-radius: 10px;
     background-color: whitesmoke;
-    max-width:justify;
+    max-width:1000px;
     
  }
  .quiz-rule h2{
@@ -206,8 +206,8 @@ body {
     left: 55%;
     border-radius: 10px;
     background-color: whitesmoke;
-    width: justify;
-    height: justify;
+    width: 800px;
+    
    
  }
  .question-basket{
@@ -218,7 +218,7 @@ body {
     left: 55%;
     border-radius: 10px;
     background-color: whitesmoke;
-    width:justify;
+    width:800px;
     display:none;
  }
  
