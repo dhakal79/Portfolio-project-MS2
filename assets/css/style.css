@@ -562,12 +562,13 @@ h3{
    top: 25%; 
    left: 10%; 
    right: 5%;
-   width: 320px;
+   width: 290px;
    
    }
 h3{
    margin-left: 50px;
-   font-size: 18px;
+   margin-top: 20px;
+   font-size: 15px;
    color: red;
 }
 .quiz-heading h1{
@@ -583,6 +584,8 @@ h3{
 }
 .question-heading h2{
    font-size: 18px;
+   font-weight: bold;
+   
 }
 .questions{
    font-size: 17px;
@@ -612,6 +615,15 @@ h3{
 }
 .social-media a {
    text-decoration: none;
+}
+.quiz-instruction li {
+   padding: 15px;
+}
+#question{
+   font-size: 15px;
+}
+.answer-option{
+   font-size: 15px;
 }
 }
 
