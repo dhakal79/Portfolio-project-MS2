@@ -196,7 +196,7 @@ body {
  }
 
  
-/*section for questions, next and previous buttons----*/
+/*section for questions, andd next buttons----*/
 
 .question-baskets{
     position:absolute;
@@ -240,6 +240,7 @@ body {
     padding:10px;
    
  }
+
 /* timer */
  h3{
    float: right;
@@ -247,20 +248,19 @@ body {
    color: rgb(230, 7, 7);
    font-size: 1.2rem;
 }
- 
- .questions{
-    padding:20px;
-    font-size: large;
-    padding-left:7px;
-    line-height: 25px;
-   
+ /* question and answer box */
+ #question{
+    padding: 15px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 10px;
+  
  }
  
  .answer-option{
     display:block;
     padding:8px;
-    border: 2px solid rgb(7, 7, 7);
-    margin:15px;
+    margin:20px;
     background: #d6e0e0; 
     border:none;
     border-radius: 5px;
@@ -269,24 +269,22 @@ body {
  }
  
  .answer-option > p{
-   text-align: justify;
+   text-align: left;
  }
  
- /* if the answer is correct color will be green */
+ /* color change to green when answer is correct */
  
  .answer-option.green{
-    background:green;
-    color:white;
-    opacity:0.7 ;
-  
- 
+    background: #0A4B02;
+    color: #fff;
+     
  }
  
- /* if the answer is incorrect color will be lightcoral */
+ /* icolor chnage to red when answer is incorrect */
  
  .answer-option.red{
-    background: lightcoral;
-    color:white;
+    background: #942424;
+    color:#fff;
   
  }
  
@@ -294,7 +292,7 @@ body {
     pointer-events: none;
  
  }
- 
+ /* style for button */
  .button{
     display: flex;
     margin-bottom:20px;
@@ -303,13 +301,12 @@ body {
     margin-top:20px;
  
  }
- .submit{
+ .click-button{
   
     width:150px;
     height:40px;
     font-size:large;
-    background: #2c3e50; 
-    background: linear-gradient(to right, #3498db, #2c3e50); 
+    background: #005B94; 
     border-radius: 5px;
     color:white;
     border:none;
@@ -317,7 +314,7 @@ body {
     margin:10px;
     text-align:center;
  }
- 
+ /*
  .back{
     text-align: center;
     margin:10px;
@@ -327,12 +324,12 @@ body {
     background: #2c3e50; 
     /*background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  
     background: linear-gradient(to right, #3498db, #2c3e50); */
-    border-radius: 5px;
+   /* border-radius: 5px;
     color:white;
     border:none;
     cursor:pointer;
- }
- 
+ }*/
+ /*
  .submit:hover{
     background:#64b3f4;
    
@@ -341,8 +338,8 @@ body {
  .back:hover{
     background:#64b3f4;
   
- }
- 
+ }*/
+ /*score card section */
  .score{
     text-align: center;
     display: flex;
@@ -350,11 +347,19 @@ body {
   
  }
  .points{
-    padding:10px;
+    padding:20px;
     text-align: center;
     justify-content: center;
+    color: #970202;
+    
  }
- 
+
+ .point{
+   padding:20px;
+   text-align: center;
+   justify-content: center;
+   color: #074013
+}
   /*--restart quiz box--*/
  
  .restart-quiz{

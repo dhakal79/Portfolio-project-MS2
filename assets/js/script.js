@@ -185,18 +185,18 @@ nextButton.addEventListener("click", function () {
 
 // previous button function to click to go to previous question.
 
-const previousButton = document.getElementById("previous-question");
+//const previousButton = document.getElementById("previous-question");
 
-previousButton.addEventListener("click", function () {
-    if (currentQuestion < questions.length - 1) {
-        currentQuestion--;
-        allQuestion(currentQuestion);
-    } else {
-        console.log("successfully loaded");
-        quizFinalResult();
-    }
+//previousButton.addEventListener("click", function () {
+   //if (currentQuestion < questions.length - 1) {
+        //currentQuestion--;
+        //allQuestion(currentQuestion);
+    //} else {
+        //console.log("successfully loaded");
+        //quizFinalResult();
+    //}
 
-});
+//});
 
 
 // select answer option if the answer is correct do x and if the answer is incorrect do y.
@@ -207,33 +207,33 @@ function selectedAnswers(correctAnswer) {
     let allAnswers = answerContent.children.length;
     if (givenAnswer === goodAnswer) {
         totalScoreAchieved += 1;
-        // if the user answer is correct green color background  will pop up inside the answer box.
+
+        // change color to green and red when answer is correct and incorrect, respectively.
         correctAnswer.classList.add("green");
         incrementScore();
     } else {
-        // if the user answer is incorrect red color background  will pop up inside the answer box.
         correctAnswer.classList.add("red");
         incrementWrongAnswer();
 
         //if the user answer is incorrect ! correct answer will  automatically pop up with green highlight.
 
-        for (let x = 0; x < allAnswers; x++) {
-            if (answerContent.children[x].innerText === goodAnswer) {
-                answerContent.children[x].classList.add("green");
-            }
+        // for (let x = 0; x < allAnswers; x++) {
+           // if (answerContent.children[x].innerText === goodAnswer) {
+            //    answerContent.children[x].classList.add("green");
+            //}
 
-        }
+       // }
 
     }
 
-    // user can click just one answer ! once user clicked,the rest of the answers will unable to click.
-    for (let x = 0; x < allAnswers; x++) {
-        answerContent.children[x].classList.add("unable-answer");
+    // unable answer once one answer is clicked by user.
+    for (let i = 0; i < allAnswers; i++) {
+        answerContent.children[i].classList.add("unable-answer");
     }
 
 }
 
-// Gets the current score of correct answers from the DOM and increments it
+// increament score for correct answers
 
 function incrementScore() {
 
@@ -242,7 +242,7 @@ function incrementScore() {
 
 }
 
-// Gets the current score of incorrect answers from the DOM and increments it
+// increament score for correct answers
 function incrementWrongAnswer() {
 
 	let currentScore = parseInt(document.getElementById("incorrect-answer").innerText);
@@ -250,9 +250,9 @@ function incrementWrongAnswer() {
 
 }
 
-// This section belongs to result box which will show user scores and beneath score one button which will lead user back to Home page.
+// Final result box.
 
-const restartQuiz = document.getElementById("try-quiz-again");
+const restartQuiz = document.getElementById("try-again");
 const restartButton = document.getElementById("restart-quiz");
 
 function quizFinalResult() {

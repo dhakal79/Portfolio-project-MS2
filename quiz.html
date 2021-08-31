@@ -64,7 +64,7 @@
                     <p class="best">Success ! <i class="far fa-thumbs-up"></i></p>
                     
                     <div class="button">
-                        <button id="start-quiz" class="submit"> Start Quiz </button>
+                        <button id="start-quiz" class="click-button"> Start Quiz </button>
                     </div>
                 </div>
                </div>
@@ -74,33 +74,36 @@
     <div class="question-basket" id="question-box">
         <div class="main-question-container">
             <div class="question-heading">
-                <h2> Coagulation in Water Treatment <aside><em>Quizes</em></aside> </h2>
+                <h2> Coagulation in Water Treatment <br> <em>Quizes</em></h2>
                 <div>
                      <h3>Time Left</h3> 
                 </div>
                                      
             </div>
         </div>
-        <!--Here is question element where will stor all the question -->
-        <div id="question" class="questions">
+        
+        <!-- Section for question box-->
+        <div id="question">
         </div>
-        <!--Here is answer element where will stor all the answers -->
-        <div id="answer" class="answers">
+
+        <!--Section for answers -->
+        <div id="answer">
         </div>
-        <!--quit button and next button section -->
+
+        <!--Next button section -->
         <div class="button">
-            <button id="previous-question" class="back"> Previous </button>
-            <button id="next-question" class="submit"> Next </button>
+            <button id="next-question" class="click-button"> Next </button>
         </div>
-        <!--score card section(if the question is correct will increment to correct answer tally otherwise if wrong increment in incorrect answer tally-->
+
+        <!--section for storing the score for correct and incorrect answers-->
         <div class="score">
-            <p class="points">Correct Answers: <span id="correct-answer">0</span></p>
+            <p class="point">Correct Answers: <span id="correct-answer">0</span></p>
             <p class="points">Incorrect Answers: <span id="incorrect-answer">0</span></p>
         </div>
     </div>
 </section>
 <!--Final result message and feedback area -->
-<div class="container restart-quiz " id="try-quiz-again">
+<div class="container restart-quiz " id="try-again">
             <div class="message">
                 <h2>CONGRATULATION! You have Completed the Quiz </h2>
             </div>
