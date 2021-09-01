@@ -468,7 +468,7 @@ span.fade{
 }
 
 /*feedback page */
-/*
+
 #feedback {
    clear: both;
    padding-left: 30px;
@@ -555,7 +555,7 @@ span.fade{
    background-color: #edf3f0;
 }
 
-.button {
+.submit-button {
    margin-top: 15px;
    border-radius: 5px;
    padding: 10px 20px 10px 20px;
@@ -566,7 +566,7 @@ span.fade{
    display: inline-block;
 }
 
-.button:hover {
+.submit-button:hover {
    background-color: rgb(4, 82, 39);
    color: #e74c3c;
    cursor: pointer;
@@ -577,8 +577,6 @@ span.fade{
    max-width: 800px;
    display: flex;
 }
-
-*/
 
 /* media querries */
 
