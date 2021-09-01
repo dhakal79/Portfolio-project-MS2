@@ -1,54 +1,118 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>My Quiz</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quizs about coagulation in drinking water treatment">
+    <meta name="keywords" content="water treatment, cogulation">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        <link href="./assets/css/main.css" rel="stylesheet" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-        <script type="text/javascript" src="./assets/js/game.js"></script>
-    </head>
-    <body>
-        <!-- Quiz Section -->
-        <section>
-            <div id="question1" class="question-box">
-                <h2>Question 1</h2>
-                <p>
-                    What size is the earth in terms of radius?
-                </p>
-                <select>
-                    <option>10km</option>
-                    <option>20km</option>
-                    <option>30km</option>
-                </select>
-                <div style="margin-top: 10px;">
-                    <button class="next-button" onclick="goToQuestion(2);">Next</button>
-                </div>
-                
+    <!--font awesome and google font 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">-->
+    <title>Document</title>
+</head>
+<body>
+<!--IHE logo-->
+<div id="logo">
+    <h1>IHE Delft</h1>
+</div>
+<!--Navigation bar-->
+<div class="menu-bar">
+    <ul>
+        <li><a href="index.html">Home</a>
+        </li>
+        <li><a href="quiz.html" class="active">Quiz</a>
+        </li>
+        <li><a href="contact.html">Feedback</a>
+        </li>
+    </ul>
+</div>
+
+<!-- Code for the form structure -->
+<section id="feedback">
+   <div class="form-layout">
+        <form method="POST" action="https://formdump.codeinstitute.net/" class="contact-form">
+            <!--title for the form-->
+            <div class="contact-heading">
+                <h1>
+                    Provide feedback to us
+                </h1>
             </div>
-            <div id="question2" class="question-box ">
-                <h2>Question 2</h2>
-                <div>
-                    <button class="next-button" onclick="goToQuestion(3);">Next</button>
-                    <button class="back-button">Back</button>
-                </div>
+            <!--code for contact details and icons-->
+            <div class="contact-details">
+                <h2>
+                    Your details
+                </h2>
+                <label for="fname">
+                    Full Name
+                    <i class="fas fa-user">
+                    </i>
+                </label>
+                <input id="fname" name="full-name" class="text-adjust" placeholder="Type your full name here" type="text" required>
+                <label for="email">
+                    Email Address
+                    <i class="fas fa-at">
+                    </i>
+                </label>
+                <input type="email" id="email" name="email-address" placeholder="Type your email address here" required>
             </div>
-            <div id="question3" class="question-box ">
-                <h2>Question 3</h2>
+            <!--code for feedback questtionnaire and-->
+                   
+            <div class="additional-remarks">
+                <h2>
+                    Your feedback for further improvement
+                    <i class="fas fa-pencil-alt">
+                    </i>
+                </h2>
+                <textarea name="comment" placeholder="Type your additional remarks here" rows="20" cols="100" required>
+        </textarea>
             </div>
-            <div id="question4" class="question-box ">
-                <h2>Question 4</h2>
-            </div>
-            <div id="question5" class="question-box ">
-                <h2>Question 5</h2>
+            <input type="submit" class="button" value="Submit">
+            <input type="reset" class="button" value="Reset">
+        </form>
             </div>
         </section>
-        <script>
-            main();
-        </script>
-    </body>
+<!--footer section for social media with icons-->
+<footer>
+    <ul class="social-media">
+        <li>
+            <a href="https://www.facebook.com/ihedelft" target="_blank" rel="noopener" aria-label="Visit our facebook page">
+                <i class="fab fa-facebook-square">
+                </i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/school/ihedelft/mycompany/" target="_blank" rel="noopener" aria-label="Visit our linkedin page">
+                <i class="fab fa-linkedin">
+                </i>
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/ihedelft" target="_blank" rel="noopener" aria-label="Visit our twitter page">
+                <i class="fab fa-twitter-square">
+                </i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/ihedelft/" target="_blank" rel="noopener" aria-label="Visit our instagram page">
+                <i class="fab fa-instagram-square">
+                </i>
+            </a>
+        </li>
+    </ul>
+</footer>
+    
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/5d17dcf3d4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+</body>
 </html>
