@@ -63,7 +63,7 @@ body {
 /* hero image */
 #hero-image{
    display: flex;
-   height: 80vh;
+   height: 90vh;
    justify-content: center;
    align-items: center;
    
@@ -377,6 +377,9 @@ body {
       
     
  }
+ .try-again{
+    width: 900px;
+ }
  
  .try-quiz-again{
     position: absolute;
@@ -566,20 +569,21 @@ span.fade{
 
 @media screen and (min-width: 993px) {
 .quiz-heading{
-   margin-left: 250px;
+   margin-left: 500px;
   
  
 }
 .instruction-box-1 {
    transform: translate(-0% ,-0%);
    top: 30%;
-   left: 25%;
+   left: 30%;
    right: 15%;
+   max-width: 600px;
 }
 .question-baskets {
    transform: translate(-0% ,-0%); 
    top: 20%; 
-   left: 15%; 
+   left: 25%; 
    right: 10%;
    width: 700px;
       }
