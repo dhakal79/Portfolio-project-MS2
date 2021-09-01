@@ -252,7 +252,7 @@ body {
  #question{
     padding: 15px;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 28px;
     margin-left: 10px;
   
  }
@@ -360,30 +360,29 @@ body {
    justify-content: center;
    color: #074013
 }
-  /*--restart quiz box--*/
+  /* try quiz again*/
  
- .restart-quiz{
+ .try-quiz{
     display: none;
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50% , -50%);
-    width:80%;
+    width:85%;
     background-color: white;
-    max-width: 500px;
-    border: 20px;
+      
     
  }
  
- .restart_quiz{
+ .try-quiz-again{
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50% , -50%);
-    width:80%;
-    background-color: white;
-    max-width: 500px;
+    max-width: 700px;
     border-radius: 20px;
+    background-color: white;
+    
  }
  
  .message{
@@ -396,7 +395,7 @@ body {
  
  }
  
- .final-result{
+ .final-outcome{
    display:flex;
    color: black;
    justify-content: center;
@@ -405,30 +404,38 @@ body {
  
  }
  
- #restart-quiz{
+ #try-again{
    text-align: center;
    margin:10px;
    width:150px;
    height:40px;
    font-size:large;
-   background: #2c3e50;  
-   background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  
-   background: linear-gradient(to right, #3498db, #2c3e50); 
+   background: #005B94;  
    border-radius: 5px;
    color:white;
    border:none;
    cursor:pointer;
  }
  
- #restart-button:hover{
+ #try-again:hover{
    background:#64b3f4;
    
  } 
 
- .feedback{
+ .highlight-message{
    
+color: #24a707;
 
  }
+ .highlight-message-1{
+   
+   color: rgb(155, 104, 9);
+   
+    }
+    .highlight-message-2{
+         color:  rgb(250, 12, 12);  
+      
+   }
  
  /* footer */
 
