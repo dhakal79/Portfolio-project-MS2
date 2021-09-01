@@ -605,20 +605,19 @@ h3{
 }
 .instruction-box-1 {
       transform: translate(-0% ,-0%);
-      top: 50%;
-      left: 20%;
-      right: 25%;
+      top: 30%;
+      left: 18%;
+      right: 15%;
 }
 .question-baskets {
-   transform: translate(-0% ,-0%); 
-   top: 15%; 
-   left: 10%; 
+   transform: translate(-0% ,-0%);
+   top: 20%;
+   left: 15%;
    right: 5%;
-   width: 500px;
-   margin-right: 250px;
+   width: 550px;
    }
    h3{
-      margin-left: 500px;
+      margin-left: 300px;
    }
    .quiz-heading h1{
       font-size: 20px;
