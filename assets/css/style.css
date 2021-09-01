@@ -314,6 +314,8 @@ body {
     margin: 5px;
     text-align:center;
  }
+
+ [disabled='true'] { background: grey;}
  /*
  .back{
     text-align: center;
@@ -466,6 +468,7 @@ span.fade{
 }
 
 /*feedback page */
+/*
 #feedback {
    clear: both;
    padding-left: 30px;
@@ -575,7 +578,7 @@ span.fade{
    display: flex;
 }
 
-
+*/
 
 /* media querries */
 

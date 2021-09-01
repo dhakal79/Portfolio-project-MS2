@@ -146,8 +146,10 @@ const countDown = setInterval(()=>{
 const questionContent = document.getElementById("question");
 var answerContent = document.getElementById("answer");
 const selectedAnswer = document.getElementsByClassName("answer-option");
+const nextButton = document.getElementById("next-question");
 
-function allQuestion(event) {   
+function allQuestion(event) {  
+    nextButton.setAttribute("disabled", true);  
     let createTag = document.createElement("p").innerHTML = questions[event].number + ")" + " " + questions[event].question;
     questionContent.innerHTML = createTag;
     const lastAns = questions[event].answers[3] ? `<div class="answer-option" >` + `<p>` + questions[event].answers[3] + `</P></div>` : ""
@@ -169,7 +171,7 @@ let totalScoreAchieved = 0;
 
 // next button function to click to go to next question.
 
-const nextButton = document.getElementById("next-question");
+nextButton.setAttribute("disabled", true);   //making Next button disable
 nextButton.addEventListener("click", function () {
       if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -205,6 +207,7 @@ function selectedAnswers(correctAnswer) {
     let givenAnswer = correctAnswer.innerText;
     let goodAnswer = questions[currentQuestion].correctAnswer;
     let allAnswers = answerContent.children.length;
+    nextButton.removeAttribute("disabled")
     if (givenAnswer === goodAnswer) {
         totalScoreAchieved += 1;
 
