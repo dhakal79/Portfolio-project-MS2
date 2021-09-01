@@ -564,29 +564,28 @@ span.fade{
 
 /*For screen size larger than 993px */
 
-@media screen and (min-width: 993px) and (max-width: 1400px) {
+@media screen and (min-width: 993px) {
 .quiz-heading{
-   margin-left: 150px;
+   margin-left: 250px;
   
  
 }
 .instruction-box-1 {
    transform: translate(-0% ,-0%);
-   top: 25%;
-   left: 15%;
+   top: 30%;
+   left: 25%;
    right: 15%;
 }
 .question-baskets {
    transform: translate(-0% ,-0%); 
-   top: 18%; 
+   top: 20%; 
    left: 15%; 
-   right: 15%;
-   width: 300px;
-   height: 300px;
-   }
+   right: 10%;
+   width: 700px;
+      }
 
 h3{
-   margin-left: 650px;
+   margin-left: 350px;
 }
 }
 
