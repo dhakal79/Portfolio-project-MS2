@@ -11,17 +11,16 @@
 
 body {
     font-size: 15px;
-    /*background-image:url(../images/coagulation.jpg);*/
     background-color: white;
     font-family: lato, sans-serif;
     font-weight: bold;
-    color: #3a3a3a;
+    
 }
 
 /* navigation bar */
 
 .menu-bar {
-    background: #044348;
+    background: #06467F;
     text-align: right;
 }
 
@@ -67,6 +66,7 @@ body {
    height: 80vh;
    justify-content: center;
    align-items: center;
+   
 }
 .hero{
    height: 85%;
@@ -77,6 +77,7 @@ body {
    width: 100%;
    height: 100%;
    object-fit: cover;
+   border-radius: 50px;
    
 }
 .headline{
@@ -88,6 +89,7 @@ body {
    color: white;
    z-index: 3;
 }
+/*
 .hero::after{
    content: "";
    background: black;
@@ -97,7 +99,7 @@ body {
    left: 0;
    opacity: 0.3;
    top: 0;
-}
+}*/
 
 /*quiz title heading and button for quiz instruction */
 
@@ -473,6 +475,7 @@ span.fade{
    clear: both;
    padding-left: 30px;
    
+   
 }
 
 .contact-form {
@@ -515,27 +518,6 @@ span.fade{
 
 .contact-details fa {
    margin-left: 25px;
-}
-
-.questionnaires h3 {
-   color: #046231;
-   margin-top: 20px;
-}
-
-.questionnaires hr {
-   border-top: 2px solid #151414;
-   width: 43%;
-   margin: 10px 0;
-}
-
-.feedback-questionnaire {
-   padding-left: 25px;
-}
-
-.radio-botton {
-   margin: 0 20px 40px 0;
-   cursor: pointer;
-   line-height: 15px;
 }
 
 .additional-remarks {
