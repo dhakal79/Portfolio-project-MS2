@@ -256,19 +256,19 @@ function incrementWrongAnswer() {
 // Final result box.
 
 const restartQuiz = document.getElementById("try");
-const restartButton = document.getElementById("try-again");
+
 
 function quizFinalResult() {
     questionBox.classList.remove("question-containers");
     questionBox.setAttribute("class", "hide");
     restartQuiz.setAttribute("class", "try-quiz-again");
     let finalScore = document.getElementById("score");
-    if (totalScoreAchieved > 3) {
+    if (totalScoreAchieved > 13) {
         finalScore.innerHTML =
             `<span class="highlight-message">` + `Well done!!! You master the topic! <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`;
-    } else if (totalScoreAchieved >= 2) {
+    } else if (totalScoreAchieved >= 7) {
         finalScore.innerHTML =
-            `<span class="highlight-message-1">` + `Congratulation on completing the quiz! <br><span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> <br> Good luck for better result next time !</span>`;
+            `<span class="highlight-message-1">` + `Not too bad! <br><span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> <br> Good luck for better result next time !</span>`;
     
     } else {
         finalScore.innerHTML =
@@ -276,3 +276,16 @@ function quizFinalResult() {
     }
 
 }
+
+// try quiz again button that directs to start of quiz page page
+const restartButton = document.getElementById("try-again");
+
+restartButton.addEventListener("click", function () {
+    restartQuiz.classList.remove("try-quiz");
+    restartQuiz.setAttribute("class", "hide");
+    questionBox.setAttribute("class", "question-baskets");
+    currentQuestion = 0;
+    allQuestion(currentQuestion);
+    document.getElementById("correct-answer").innerText = totalScoreAchieved = 0;
+    document.getElementById("incorrect-answer").innerText = totalScoreAchieved = 0;
+})
