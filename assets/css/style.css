@@ -720,6 +720,22 @@ h3{
    .try-quiz-again{
       top: 65%;
    }
+
+   /*contact page */
+   .contact-details {
+      width: 250px;
+  }
+
+  .contact-details h2 {
+   font-size: 20px;
+  }
+  .additional-remarks h2 {
+   margin-bottom: 5px; 
+   font-size: 20px;
+}
+#feedback{
+   padding-left: 20px;
+}
    
 
 /* footer */
