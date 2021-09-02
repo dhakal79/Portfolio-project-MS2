@@ -10,5 +10,5 @@ function checkForm() {
 }
 
 function clearForm() {
-    document.getElementById("Form").reset();
+    document.getElementById("form").reset();
 }
