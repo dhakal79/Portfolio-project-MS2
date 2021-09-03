@@ -1,32 +1,23 @@
 //  targeting  main variables and id´s of home page and quiz box
 const startButton = document.getElementById("btn-quiz-rule");
 const questionBox = document.getElementById("question-box");
-const previousQuestion = document.getElementById("previous-question");
+//const previousQuestion = document.getElementById("previous-question");
 const nextQuestion = document.getElementById("next-question");
 const instructionBox = document.getElementById("box")
-const nextApp = document.getElementById("start-quiz");
+const startQuiz = document.getElementById("start-quiz");
 
 
 
-// adding addEventfunction (when the start button clicked)
+// adding addEventfunction (when the quiz rule button clicked)
 
 startButton.addEventListener("click", function () {
     //questionBox.classList.remove("question-baskets");
     instructionBox.setAttribute("class", "instruction-box-1");
     //$(".main-container").hide();
 })   
-
-//  adding addEventfunction ( targeting the start quiz button inside instruction box  )
-
-nextApp.addEventListener("click", function () {
-    instructionBox.classList.remove("instruction-box-1");
-    questionBox.setAttribute("class", "question-baskets");
-    instructionBox.classList.add("hide");
-})
-
 // targeting timer in the questions
 const timeH = document.querySelector('h3');
-let timeSecond = 202;
+let timeSecond = 200;
 
 timeH.innerHTML = timeSecond; 
 
@@ -38,6 +29,15 @@ const countDown = setInterval(()=>{
     }
 },1000)
 
+
+//  adding addEventfunction ( targeting the start quiz button inside instruction box  )
+
+startQuiz.addEventListener("click", function () {
+    instructionBox.classList.remove("instruction-box-1");
+    questionBox.setAttribute("class", "question-baskets");
+    instructionBox.classList.add("hide");
+    timeSecond= 200;
+})
 
 // Array of Questions and Answers.
 
