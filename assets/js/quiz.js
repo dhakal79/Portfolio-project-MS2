@@ -56,7 +56,7 @@ let questions = [{
 {
     number: 3,
     question: "Which of the following chemicals is used as coagulant?",
-    answers: ["NaOH","KMNO4", "FeCl3","Ca(OH)2"],
+    answers: ["NaOH","KMNO<sub>4</sub>", "FeCl<sub>3</sub>","Ca(OH)<sub>2</sub>"],
     correctAnswer: "FeCl3",
 },
 {
@@ -79,7 +79,7 @@ let questions = [{
 },
 {
     number: 7,
-    question: "With a velocity of 750 m3/h the water is fed to two units. The coagulant is added in a cascade with a height of 0,2 m. The shear of mixing (Gc) at a temperature of 10 °C is for this  situation 1500 s-1. The coagulation compartment is a bit over dimensioned and    therefore, if the velocity is below 500 m3/h, only one unit is used. What is the shear at a velocity of 500 m3/h and a temperature of 10°C (one unit in use)?",
+    question: "With a velocity of 750 m<sup>3</sup>/h the water is fed to two units. The coagulant is added in a cascade with a height of 0.2 m. The shear of mixing (Gc) at a temperature of 10 <sup>o</sup>C is for this  situation 1500 s<sup>-1</sup>. The coagulation compartment is a bit over dimensioned and    therefore, if the velocity is below 500 m<sup>3</sup>/h, only one unit is used. What is the shear at a velocity of 500 m<sup>3</sup>/h and a temperature of 10<sup>o</sup>C (one unit in use)?",
     
     answers: ["1430","1530","1630","1730"],
     correctAnswer: "1730",
@@ -93,14 +93,14 @@ let questions = [{
 },
 {
     number: 9,
-    question: "When the temperature drops from 20 0C to 10 0C, the dissipated power of a stirring device should decrease with a factor 1.14 to obtain equal G-values.",
+    question: "When the temperature drops from 20<sup>o</sup>C to 10<sup>o</sup>C, the dissipated power of a stirring device should decrease with a factor 1.14 to obtain equal G-values.",
     answers: ["True", "False", "None"],
     correctAnswer: "False",  
      
 },
 {
     number: 10,
-    question: "In the production location of Berenplaat (watercompany Evides), 80 sludge blancket clarifiers(5.7x8.3x3 m) are used for a combined coagulation/flocculation/sedimentation. About 2/3 of the sludge blanket clarifier is stirred mechanically (40 W per basin). The water production is 22000 m3/h. The Gv-value in the flocculation part of the sludge blanket clarifier is equal to 20 s-1.?",
+    question: "In the production location of Berenplaat (watercompany Evides), 80 sludge blancket clarifiers(5.7 x 8.3 x 3 m) are used for a combined coagulation/flocculation/sedimentation. About 2/3 of the sludge blanket clarifier is stirred mechanically (40 W per basin). The water production is 22000 m<sup>3</sup>/h. The Gv-value in the flocculation part of the sludge blanket clarifier is equal to 20 s<sup>-1</sup>?",
     answers: ["True", "False", "None"],
     correctAnswer: "True", 
 },
