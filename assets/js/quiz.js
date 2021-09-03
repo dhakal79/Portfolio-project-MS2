@@ -24,6 +24,21 @@ nextApp.addEventListener("click", function () {
     instructionBox.classList.add("hide");
 })
 
+// targeting timer in the questions
+const timeH = document.querySelector('h3');
+let timeSecond = 202;
+
+timeH.innerHTML = timeSecond; 
+
+const countDown = setInterval(()=>{
+    timeSecond--;
+    timeH.innerHTML = `${timeSecond} sec time remaining`; //timeSecond + ' sec time remaining';
+    if (timeSecond <0 || timeSecond<1){
+        clearInterval(countDown);
+    }
+},1000)
+
+
 // Array of Questions and Answers.
 
 let questions = [{
@@ -126,20 +141,6 @@ let questions = [{
 
 ]
 
-// targeting timer in the questions
-const timeH = document.querySelector('h3');
-let timeSecond = 200;
-
-timeH.innerHTML = timeSecond; 
-
-const countDown = setInterval(()=>{
-    timeSecond--;
-    timeH.innerHTML = `${timeSecond} sec time remaining`; //timeSecond + ' sec time remaining';
-    if (timeSecond <0 || timeSecond<1){
-        clearInterval(countDown);
-    }
-},1000)
-
 
 // function to getting all the questions and answer options from array .
 
@@ -158,6 +159,7 @@ function allQuestion(event) {
         `<div class="answer-option"> ` + `<p>` + questions[event].answers[2] + `</P></div>` +
         lastAns;
     answerContent.innerHTML = answerOption;
+    timeSecond = 200;
 
     for (let i = 0; i < selectedAnswer.length; i++) {
         selectedAnswer[i].setAttribute("onclick", "selectedAnswers(this)");
@@ -176,7 +178,7 @@ nextButton.addEventListener("click", function () {
       if (currentQuestion < questions.length - 1) {
         currentQuestion++;
         allQuestion(currentQuestion);
-        
+                
     } else {
         console.log("successfully loaded");
             questionBox.classList.add("hide");
