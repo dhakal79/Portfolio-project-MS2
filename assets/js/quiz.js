@@ -285,6 +285,7 @@ restartButton.addEventListener("click", function () {
     restartQuiz.setAttribute("class", "hide");
     questionBox.setAttribute("class", "question-baskets");
     currentQuestion = 0;
+    timeSecond = 200;
     allQuestion(currentQuestion);
     document.getElementById("correct-answer").innerText = totalScoreAchieved = 0;
     document.getElementById("incorrect-answer").innerText = totalScoreAchieved = 0;
