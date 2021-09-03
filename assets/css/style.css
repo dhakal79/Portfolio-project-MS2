@@ -111,6 +111,12 @@ span.fade{
    width: 90px;
    border-radius: 10px;
    text-align: center;
+   position: absolute;
+    top: 48%;
+    left: 72%;
+    transform: translate(-20%, -70%);
+    z-index: 3;
+    
   
 }
 /*
@@ -590,7 +596,21 @@ color: #24a707;
 
 /*For screen size larger than 993px */
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1400px) {
+
+
+/*Home page */
+.headline{
+font-size: 30px;
+padding: 10px;
+left: 15%;
+
+}
+
+.go-to-quiz{
+   left: 68%;
+}
+/*quiz page */
 .quiz-heading{
    margin-left: 500px;
   
@@ -662,7 +682,15 @@ h3{
 
 @media screen and (max-width: 767px) {
 
-   /* Quiz page */
+   /*Home page */
+
+   .go-to-quiz {
+      font-size: 12px;
+      width: 75px;
+      top: 58%;
+      left: 55%;
+   }
+         /* Quiz page */
 
    .quiz-heading{
       margin-left: 0px;
