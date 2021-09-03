@@ -2,11 +2,11 @@
 # Quiz About Coagulation in Water Treatment 
 Welcome! [IHE Delft](http://un-ihe.org)
 ## Introduction
-IHE Delft Institute for Water Education is the largest international water education facility in the world. Its mission is to contribute to water related research and the education of water professionals. IHE Delft has provided graduate education to more than 15,000 water professionals from 162 countries. Over 150 PhD fellows are currently enrolled in water-related research and more than 120 water research and capacity development projects are carried out throughout the world. Due to COVID-19, IHE Delft is making education online if possible for all the modules. Within this new policy framework, I am going to make my module"unit operation in water treatment" online. This module has four componets coagulation, sedimentation, filtration and dissolved air floatation. 
+Globally, degradation of surface water quality due to the presence of physical, chemical and biological impurities is a major issue that makes surface water unsafe to drink. Therefore, treatment of surface water is essential to make it pathogen free, chemically safe, with no dirt solid matter and aesthetically acceptable. In this context, there is a strong need to understand the theoretical aspect of various treatment options, its design principle and operation. Among the various treatment steps, coagulation process is the first steps in the treatment where we add coagulant to agglomerate small particles to larger in order to allow them to settle in the next treatment steps. 
 
-The overall aim of this project is to make online the componennt "coagulation" which I involve for teaching. 
+The overall aim of this project is to make quiz app which allows to assess the knowledge of students in the topic of coagulation. This project is the continuation of the first project, which focused on giving theoretical content about the topic. 
 
-A live website can be found [here](https://dhakal79.github.io/Portfolio-project-MS1/).
+A live website can be found [here](https://dhakal79.github.io/Portfolio-project-MS2/).
 
 ![website preview](assets/images/screenshot.jpg)
 
