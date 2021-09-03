@@ -279,7 +279,6 @@ function quizFinalResult() {
 
 // try quiz again button that directs to start of quiz page page
 const restartButton = document.getElementById("try-again");
-
 restartButton.addEventListener("click", function () {
     restartQuiz.classList.remove("try-quiz");
     restartQuiz.setAttribute("class", "hide");
