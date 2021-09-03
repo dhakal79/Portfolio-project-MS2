@@ -97,6 +97,22 @@ span{
 span.fade{
    color: #63024e;
 }
+
+.go-to-quiz{
+   color: white;
+   text-decoration: none;
+   margin-left: 20px;
+   margin-top: 10px;
+   font-size: 15px;
+   background-color: #0099F7;
+   padding: 10px;
+   padding-left: 15px;
+   display: flex;
+   width: 100px;
+   border-radius: 10px;
+   text-align: center;
+  
+}
 /*
 .hero::after{
    content: "";

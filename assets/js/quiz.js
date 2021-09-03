@@ -11,7 +11,7 @@ const nextApp = document.getElementById("start-quiz");
 // adding addEventfunction (when the start button clicked)
 
 startButton.addEventListener("click", function () {
-    questionBox.classList.remove("question-baskets");
+    //questionBox.classList.remove("question-baskets");
     instructionBox.setAttribute("class", "instruction-box-1");
     //$(".main-container").hide();
 })   
@@ -159,7 +159,7 @@ function allQuestion(event) {
         `<div class="answer-option"> ` + `<p>` + questions[event].answers[2] + `</P></div>` +
         lastAns;
     answerContent.innerHTML = answerOption;
-    timeSecond = 200;
+    
 
     for (let i = 0; i < selectedAnswer.length; i++) {
         selectedAnswer[i].setAttribute("onclick", "selectedAnswers(this)");
