@@ -44,7 +44,7 @@ startQuiz.addEventListener("click", function () {
 let questions = [{
     number: 1,
     question: "The traditional treatment of surface water consisted of coagulant dosing, followed by floc formation-settling and rapid filtration?",
-    answers: ["False", "True", "None"],
+    answers: ["False", "True"],
     correctAnswer: "False",
 },
 {
@@ -62,7 +62,7 @@ let questions = [{
 {
     number: 4,
     question: "Jar tests are executed to determine optimal coagulant dose, pH and coagulant aid cose.",
-    answers: ["True","False","None"],
+    answers: ["True","False"],
     correctAnswer: "True",
 },
 {
@@ -74,69 +74,64 @@ let questions = [{
 {
     number: 6,
     question: "At lower temperatures coagulation can be enhanced by using higher coagulant doses,increase impeller speed and/or applying coagulant aids.",
-    answers: ["True", "False", "None"],
+    answers: ["True", "False"],
     correctAnswer: "True",
 },
 {
     number: 7,
-    question: "With a velocity of 750 m<sup>3</sup>/h the water is fed to two units. The coagulant is added in a cascade with a height of 0.2 m. The shear of mixing (Gc) at a temperature of 10 <sup>o</sup>C is for this  situation 1500 s<sup>-1</sup>. The coagulation compartment is a bit over dimensioned and    therefore, if the velocity is below 500 m<sup>3</sup>/h, only one unit is used. What is the shear at a velocity of 500 m<sup>3</sup>/h and a temperature of 10<sup>o</sup>C (one unit in use)?",
-    
-    answers: ["1430","1530","1630","1730"],
-    correctAnswer: "1730",
+    question: "This type of flocculation where agglomeration is accomplished by agitation in the suspension is refered as:",     
+    answers: ["Ortho-kinetic flocculation","Peri-kinetic flocculation"],
+    correctAnswer: "Ortho-kinetic flocculation",
 },
 {
     number: 8,
     question: "In floc formation orthokinetics is the predominant mechanism.",
-    answers: ["True", "False", "None"],
+    answers: ["True", "False"],
     correctAnswer: "True",  
     
 },
 {
     number: 9,
     question: "When the temperature drops from 20<sup>o</sup>C to 10<sup>o</sup>C, the dissipated power of a stirring device should decrease with a factor 1.14 to obtain equal G-values.",
-    answers: ["True", "False", "None"],
+    answers: ["True", "False"],
     correctAnswer: "False",  
      
 },
 {
     number: 10,
     question: "In the production location of Berenplaat (watercompany Evides), 80 sludge blancket clarifiers(5.7 x 8.3 x 3 m) are used for a combined coagulation/flocculation/sedimentation. About 2/3 of the sludge blanket clarifier is stirred mechanically (40 W per basin). The water production is 22000 m<sup>3</sup>/h. The Gv-value in the flocculation part of the sludge blanket clarifier is equal to 20 s<sup>-1</sup>?",
-    answers: ["True", "False", "None"],
+    answers: ["True", "False"],
     correctAnswer: "True", 
 },
 {
     number: 11,
     question: "When in a flocculation chamber the flow is perpendicular to the stirring axis less short circuiting occurs than in a chamber where the flow is parallel to the stirring axis?",
-    answers: ["True", "False", "None"],
+    answers: ["True", "False"],
     correctAnswer: "False", 
 },
 {
     number: 12,
     question: "During floc formation the maximum rotation speed of an impeller with a radius of 1.8 m is 5.3 rotations per minute.?",
-    answers: ["True", "False", "None"],
+    answers: ["True", "False"],
     correctAnswer: "True", 
 },
 {
     number: 13,
-    question: "",
-    answers: ["20%",
-        "14%",
-        "50%",
-        "70%"
-    ],
-    correctAnswer: "14%",
+    question: "What is the mechanisms of coagulation when it is refers to incorporation in hydroxide flocs ",
+    answers: ["Sweep Coagulation", "Adsorptive Coagulation", "Electrostatic Coagulation", "All of the above"],
+    correctAnswer: "Sweep Coagulation",
 },
 {
     number: 14,
-    question: "",
-    answers: ["a","b","c", "d"],
-    correctAnswer: "d",
+    question: "How will the pH of water change after adding alum? ",
+    answers: ["pH will drop","pH will increase","Neutral"],
+    correctAnswer: "pH will drop",
 },
 {
     number: 15,
-    question: " ",
-    answers: ["a","b","c", "d"],
-    correctAnswer: "d",
+    question: " What is the recommended detention time ( t ) of water in rapid mixer?",
+    answers: ["5 minute","2 minute","3 minute", "less than 1 minute"],
+    correctAnswer: "less than 1 minute",
 },
 
 ]
