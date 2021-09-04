@@ -596,18 +596,22 @@ color: #24a707;
 
 /*For screen size larger than 1400px */
 
-/*Quiz page */
+
 @media screen and (min-width: 1401px) {
+/*Home page */
 .headline{
    font-size: 30px;
    padding: 10px;
-   left: 15%;
+   left: 27%;
    
    }
    
    .go-to-quiz{
-      left: 68%;
+      left: 62%;
    }
+
+/*Quiz page */
+
    /*quiz page */
    .quiz-heading{
       margin-left: 450px;
