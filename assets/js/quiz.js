@@ -43,27 +43,27 @@ startQuiz.addEventListener("click", function () {
 
 let questions = [{
     number: 1,
-    question: "The traditional treatment of surface water consisted of coagulant dosing, followed by floc formation-settling and rapid filtration?",
-    answers: ["False", "True"],
-    correctAnswer: "False",
+    question: "The main objectives of the coagulation process for drinking water preparation are",
+    answers: ["Suspended and colloidal particles", "Dissolved matter", "Both", "None"],
+    correctAnswer: "Both",
 },
 {
     number: 2,
-    question: "Indicate possible locations of coagulation in the treatment train (more answers can be possible)",
+    question: "Indicate possible locations of coagulation in the treatment train",
     answers: ["Before storage","Before filtration","Before ozonation","Before GAC"],
     correctAnswer: "Before storage",
 },
 {
     number: 3,
     question: "Which of the following chemicals is used as coagulant?",
-    answers: ["NaOH","KMNO<sub>4</sub>", "FeCl<sub>3</sub>","Ca(OH)<sub>2</sub>"],
+    answers: ["KMNO<sub>4</sub>", "FeCl<sub>3</sub>","Ca(OH)<sub>2</sub>"],
     correctAnswer: "FeCl3",
 },
 {
     number: 4,
-    question: "Jar tests are executed to determine optimal coagulant dose, pH and coagulant aid cose.",
-    answers: ["True","False"],
-    correctAnswer: "True",
+    question: "Jar tests are executed to determine",
+    answers: ["Optimal coagulant dose","pH","Both" ,"None"],
+    correctAnswer: "Both",
 },
 {
     number: 5,
@@ -73,51 +73,51 @@ let questions = [{
 },
 {
     number: 6,
-    question: "At lower temperatures coagulation can be enhanced by using higher coagulant doses,increase impeller speed and/or applying coagulant aids.",
-    answers: ["True", "False"],
-    correctAnswer: "True",
+    question: "At lower temperatures coagulation can be enhanced by the following method",
+    answers: ["Higher cogulant doses", "Increase impeller speed", "Applying coagulant aids", "All of the above"],
+    correctAnswer: "All of the above",
 },
 {
     number: 7,
-    question: "This type of flocculation where agglomeration is accomplished by agitation in the suspension is refered as:",     
-    answers: ["Ortho-kinetic flocculation","Peri-kinetic flocculation"],
+    question: "The type of flocculation where agglomeration is accomplished by agitation in the suspension is refered as:",     
+    answers: ["Ortho-kinetic flocculation","Peri-kinetic flocculation","Both"],
     correctAnswer: "Ortho-kinetic flocculation",
 },
 {
     number: 8,
-    question: "In floc formation orthokinetics is the predominant mechanism.",
-    answers: ["True", "False"],
-    correctAnswer: "True",  
+    question: "How can we increase the sedimentation rate of the turbidity causing colloidal particles?",
+    answers: ["Neutralisation of the surface charge ", "Enlarging of the colloids by agglomeration", "Both","None"],
+    correctAnswer: "Both",  
     
 },
 {
     number: 9,
-    question: "When the temperature drops from 20<sup>o</sup>C to 10<sup>o</sup>C, the dissipated power of a stirring device should decrease with a factor 1.14 to obtain equal G-values.",
-    answers: ["True", "False"],
-    correctAnswer: "False",  
+    question: "The charge of colloidal particles at iso-electric point is",
+    answers: ["Positive", "Negative", "No charge"],
+    correctAnswer: "No charge",  
      
 },
 {
     number: 10,
-    question: "In the production location of Berenplaat (watercompany Evides), 80 sludge blancket clarifiers(5.7 x 8.3 x 3 m) are used for a combined coagulation/flocculation/sedimentation. About 2/3 of the sludge blanket clarifier is stirred mechanically (40 W per basin). The water production is 22000 m<sup>3</sup>/h. The Gv-value in the flocculation part of the sludge blanket clarifier is equal to 20 s<sup>-1</sup>?",
-    answers: ["True", "False"],
-    correctAnswer: "True", 
+    question: "After dosage of coagulant, fast and intensive agitation (“rapid mixing”) is needed to",
+    answers: ["Distribute adsorbing species quickly", "Prevent local high coagulant concentrations", "Both", "None"],
+    correctAnswer: "Both", 
 },
 {
     number: 11,
-    question: "When in a flocculation chamber the flow is perpendicular to the stirring axis less short circuiting occurs than in a chamber where the flow is parallel to the stirring axis?",
-    answers: ["True", "False"],
-    correctAnswer: "False", 
+    question: " The process of removing of the repulsive surface charge by adding coagulants followed by rapid mixing is called",
+    answers: ["Flocculation", "Destabilisation", "Separation"],
+    correctAnswer: "Destabilisation", 
 },
 {
     number: 12,
-    question: "During floc formation the maximum rotation speed of an impeller with a radius of 1.8 m is 5.3 rotations per minute.?",
-    answers: ["True", "False"],
-    correctAnswer: "True", 
+    question: " Which of the following components in water are largely removed by coagulation process.",
+    answers: ["Turbidity", "Phosphate", "Color", "All of the above"],
+    correctAnswer: "All of the above", 
 },
 {
     number: 13,
-    question: "What is the mechanisms of coagulation when it is refers to incorporation in hydroxide flocs ",
+    question: "The type of coagulation mechanisms when it is refers to incorporation in hydroxide flocs is ",
     answers: ["Sweep Coagulation", "Adsorptive Coagulation", "Electrostatic Coagulation", "All of the above"],
     correctAnswer: "Sweep Coagulation",
 },
@@ -148,7 +148,7 @@ function allQuestion(event) {
     nextButton.setAttribute("disabled", true);  
     let createTag = document.createElement("p").innerHTML = questions[event].number + ")" + " " + questions[event].question;
     questionContent.innerHTML = createTag;
-    const lastAns = questions[event].answers[3] ? `<div class="answer-option" >` + `<p>` + questions[event].answers[3] + `</P></div>` : ""
+    const lastAns = questions[event].answers [3] ? `<div class="answer-option" >` + `<p>` + questions[event].answers [3] + `</P></div>` : ""
     let answerOption = `<div class="answer-option">` + `<p>` + questions[event].answers[0] + `</P></div>` +
         `<div class="answer-option">` + `<p>` + questions[event].answers[1] + `</P></div>` +
         `<div class="answer-option"> ` + `<p>` + questions[event].answers[2] + `</P></div>` +
