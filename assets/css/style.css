@@ -426,7 +426,6 @@ span.fade{
     padding:10px;
     font-size: 20px;
     text-align: center;
-    text-transform: capitalize;
     color:black;
     margin-top:20px;
  
@@ -670,8 +669,8 @@ left: 15%;
 }
 /*quiz page */
 .quiz-heading{
-   margin-left: 270px;
-   top: 200px;
+   margin-left: 250px;
+   top: 300px;
  
 }
 .instruction-box-1 {
@@ -683,8 +682,8 @@ left: 15%;
 }
 .question-baskets {
    transform: translate(-0% ,-0%); 
-   top: 20%; 
-   left: 15%; 
+   top: 27%; 
+   left: 14%; 
    right: 10%;
    width: 750px;
       }
@@ -709,7 +708,7 @@ h3{
 
      /* Quiz page */
 .quiz-heading{
-   margin-left: 0px;
+   margin-left: 100px;
 }
 .quiz-heading h1{
    margin-left: 40px;
@@ -722,7 +721,7 @@ h3{
 }
 .question-baskets {
    transform: translate(-0% ,-0%);
-   top: 20%;
+   top: 25%;
    left: 15%;
    right: 5%;
    width: 550px;
@@ -782,7 +781,7 @@ h3{
    font-size: 15px;
    color: red;
 }
-.quiz-heading h1{
+.quiz-heading h2{
    font-size: 14px;
    margin-top: 15px;
    text-align: center;
