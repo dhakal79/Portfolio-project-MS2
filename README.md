@@ -81,25 +81,25 @@ The choice of website right foreground and background colour is essential that d
 ## 1.5 Site Skeleton
   [Go to the top](#table-of-contents)
  
-[Balsamiq](https://balsamiq.com/) was used to create wireframes of the website. This was very useful as it gives the template of the UI. Wireframes were designed for web browser and a mobile browser format. The concept design (wireframes) of webpages (3 pages) prepared is presented below.
+[Balsamiq](https://balsamiq.com/) was used to create wireframes of the website. This was very useful as it gives the template of the UI. Wireframes were designed for web browser and a mobile browser format. The concept design (wireframes) of webpages (3 pages) of the app prepared is presented below.
 
-<a name="introduction-page"></a>
-### Introduction Page
-![Desktop Version](./assets/images/introduction-desktop.png)
-![Mobile Version](./assets/images/introduction-mobile.png)
+<a name="home-page"></a>
+### Home Page
+![Desktop Version](/assets/images/home-desktop.png)
+![Mobile Version](/assets/images/home-mobile.png)
 
 	
-<a name="theory-page"></a>
-### Theory Page
-  ![Desktop Version](./assets/images/theory-desktop.png)
+<a name="quiz-page"></a>
+### Quiz Page
+  ![Desktop Version](/assets/images/quiz-desktop.png)
 
-![Mobile Version](./assets/images/theory-mobile.png)
+![Mobile Version](/assets/images/quiz-mobile.png)
 
 <a name="feedback-page"></a>
 ### Feedback Page
-![Desktop Version](./assets/images/feedback-desktop.png)
+![Desktop Version](/assets/images/feedback-desktop.png)
 
-![Mobile Version](./assets/images/feedback-mobile.png)
+![Mobile Version](/assets/images/feedback-mobile.png)
 
 
   <a name="features"></a>
@@ -107,25 +107,28 @@ The choice of website right foreground and background colour is essential that d
   [Go to the top](#table-of-contents)
  ### All 3 pages:
 - Navigation bar is placed at the top right corner of the page, and cosnidered a hover effect that changes the colour (with green box) when we want to click the page. The hover effect is placed to improve the user expereince. 
-- Drop down menu bar is provided to the main menu bar of the theory.html page
 - Logo of IHE Delft is placed on the top left corner 
 - Background color of menu bar and foreground color were chosen considering the contrast between background and foreground colours. We make use of [WebAim](https://webaim.org/resources/contrastchecker/) to select the background and foreground color.
 - Social media links (for facebook, Linkden, Twitter and Youtube) are placed at the bottom of the each page in the footer. All the links will open in a new tab. 
-- Back to top link provided to each page at the bottom left corner. this will allow the visitor to access to the top oif page in one click.
+- At the bottom of each it is written By Nirajan Dhakal, 2021 
 
-### Introduction page:
-- Water image is included just below the menubar to highlight that this website provides information about water. We provide zoom animation to the image to attract the attention of the user.
-- The page contain the title of the module "Unit Operation in Water Treatment" and below which which provided this divisions (using flex properties). The first division (left) provides information about aim of the module, learning objectives, the second division (middle) provides information about when to apply for the course and contact details of the module coordinator. finally, the last division contain a module introduction video (self recorded). 
-- An external link "Apply here" provided where interested users can apply for a face to face course.
-- Summary of topics to be covered in this module is presented in the bottom of the page (just above the social media link) using the property flex.
+### Home page:
+- An image of water treatment plant with zoom animation is included with a focus to attract the attention of the user.
+- A text box with letter "Quiz on coagulation in water treatment is provided. This has animation per character to atrract the attention of the user.
+- Below the text, a button "go to quiz" is given to direct the user to the quiz page.
 
-The screenshot of introduction page is below:
+The screenshot of home page is below:
 
   Introduction page UI:
-  ![introduction page preview](./assets/images/introdcution-end-product.jpg)
+  ![home page preview](/assets/images/home-page-end-product.jpg)
 
-### Theory page:
-- This page provides theory of coagulation process in water treatment
+### Quiz page:
+- This page start with title "Quiz on coagulation in drinking water treatment" and a button 'Quiz rule". The screenshot is below:
+![quiz page preview](/assets/images/quiz-page-first-page.jpg)
+
+- On clicking button "Quiz rule" it provides instruction to the quiz and "start quiz" button. The screenshot is below:
+![quiz page preview](/assets/images/quiz-page-instruction.jpg)
+
 - page provides information in both text as well as graphs.
 - This page also provides the Table of content that helps users what topics needs to be covered in this course
 
