@@ -17,10 +17,9 @@ A live website can be found [here](https://dhakal79.github.io/Portfolio-project-
   - [User Goals:](#user-goals)
   - [User Expectations:](#user-expectations)
   -	[Colour scheme and font](#color-scheme)
-  - [Audio/video controls](#audio-video)
   - [Site skeleton (wireframes)-3 pages](#wireframes)
-    - [Introduction page](#introduction-page)
-    - [Theory page](#theory-page)
+    - [Home page](#home-page)
+    - [Quiz page](#quiz-page)
     - [Feedback page](#feedback-page)
 
       
@@ -40,44 +39,43 @@ A live website can be found [here](https://dhakal79.github.io/Portfolio-project-
 # 1. User Expereince (UX) design
   [Go to the top](#table-of-contents)
 
-  The impact of COVID-19 pandemic on university teaching is to turn face to face teaching to online learning. It was a challenge for lecturer to switch all face to face teaching to online learning. This project is aimed to provide a platform where students can learn online for a module name" 
-  unit operation in water treatment". 
+  Due to COVID-19, the university is switcing all educatiuon systems online which includes teaching and student assessment as well. One of the challenges for lecturer is to assess and grade the knowledge of students online. This project is aimed to design the online quiz app which allows to assess the knowledge of students on the topic coagulation in drinking water treatment. 
 
   The following users types can be benifitted from the website:
 
-* Professionals dealing with engineering, management and education in the fields of water supply and wastewater and urban infrastructure.
-* Post graduate students in environmental engineering. 
-* Participants from government organisations ( both local and national agencies), non-governmental organisations and the private sector. 
+* Professionals dealing with water supply engineering.
+* Post graduate students in the field of water supply and environmental engineering. 
+ 
  
 
 <a name="user-goals"></a>
 ## 1.1 User Goals
   [Go to the top](#table-of-contents)
 
-The main goal of this website is to provide in depth theory about coagulation process in drinking water treatment. I want to provide information about coagulation to the target audience.
+The main goal of this project is to develop a quiz app that allows to assess the knowldge of students in the topic of coagulation in drinking water treatment process. This is of great useful for me to apply in my teaching to assess the understanding of my students.
 
 
 <a name="user-expectations"></a>
 ## 1.2 User Expectations
   [Go to the top](#table-of-contents)
 
-The website content provides state-of-the-art knowledge and experience on the technologies and design practices of conventional water treatment systems. The site can be an ideal for practicing engineers who are working in the water supply and sewerage systems. Folloiwng user's expections are considered while designing the site:
-* The site structure is designed considering the expectation of users to be simple and easy to use.
-* The user interface is easy to navigate (inlcude main navigation bar, drop dwon menu bar and a link at bottom of page that user can go back to top of the page in just one click).
+The quiz app provides 15 multiple choice questions that allows the users to understanding their knowledge on topic "coagulation in drinking water treatment process". Folloiwng user's expections are considered while designing the site:
+* The quiz app is designed considering the expectation of users to be simple and easy to use.
+* The user interface is easy to navigate (inlcude main navigation bar, and a link at front page that direct to quiz page in just one click).
+* Quiz app that contains bank of questions with multiple choice options but users can only select one answer.
+* Quiz app has timer that alerts users to finish the quiz on time.
+* Quiz app has the function to show if the selected answer is correct or wrong and provide the score (correct and incorrect) at the bottom.
+* Quiz app provides overall score with feedback message at the end of the quiz and has an option to try again the quiz.
 * Responsive design for all screen/device sizes like mobile, tablet and desktop.
-* Feedback/course evalaution page provided where users can provide their comments and suggestion for future improvement
-* a link for application provided for those users who will be interested to take this course faceto face at IHE Delft.
+* Feedback page provided where users can provide their comments and suggestion for future improvement
+
 
 <a name="color-scheme"></a>
 ## 1.3 Color Scheme
   [Go to the top](#table-of-contents)
 
 The choice of website right foreground and background colour is essential that decides the site visitors wheather to emote the site or not. In this design we consider the accessibility guideline i.e, contrast between background and foreground colours. We make use of [WebAim](https://webaim.org/resources/contrastchecker/)  to select the background and foreground color. Here is an example how the choice of background and foreground is decided to the site.
-![color contrast](./assets/images/color-contrast.jpg)
-
-Other foreground and background color used in the sites are
-* foreground: #ffffff
-* background: #044348
+![color contrast](assets/images/color-contrast.jpg)
 
 <a name="audio-video"></a>
 ## 1.4 Audio-Video/Images
