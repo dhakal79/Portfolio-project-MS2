@@ -77,11 +77,6 @@ The quiz app provides 15 multiple choice questions that allows the users to unde
 The choice of website right foreground and background colour is essential that decides the site visitors wheather to emote the site or not. In this design we consider the accessibility guideline i.e, contrast between background and foreground colours. We make use of [WebAim](https://webaim.org/resources/contrastchecker/)  to select the background and foreground color. Here is an example how the choice of background and foreground is decided to the site.
 ![color contrast](assets/images/color-contrast.jpg)
 
-<a name="audio-video"></a>
-## 1.4 Audio-Video/Images
-  [Go to the top](#table-of-contents)
-  
-This website consider of having images, audio/video that helps the users to understand the content easily. Having picture, audio/video consider worth a thousand words” when creating a web application. As far as possible all the images, video included in the website, is considered to be of high quality. The included audio/video is provided with control actions such as playing of audio/video that allows the user to initiate and control the actions.
 <a name="wireframes"></a>
 ## 1.5 Site Skeleton
   [Go to the top](#table-of-contents)
