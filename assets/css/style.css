@@ -650,6 +650,7 @@ color: #24a707;
    .highlight-message-1 {
       font-size: 15px;
    }
+}
 
 /*For screen size larger than 993px */
 
@@ -869,4 +870,5 @@ h3{
 .restart_quiz {
       top: 60%;
 }
-} 
+}
+
