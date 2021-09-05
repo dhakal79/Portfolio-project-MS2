@@ -159,17 +159,20 @@ The feedback form was correctly submitted  as  shown below.
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) (markup language) was used for structuring and presenting content of the website.
  
 * [CSS3](https://en.wikipedia.org/wiki/CSS) (Cascading Style Sheets) was used to provide the style to the content written in a HTML.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used to make the developed quiz more interactive, add dynamic behavior and special effects.
 * [Balsamiq](https://balsamiq.com/) was used to create wireframes of the website (desktop and mobile version).
 * [Google Fonts](https://fonts.google.com/) was used to import font-family "Lato" and "Oswald" into style,css file and which was used throughout the pages of the website.
-* [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html) was used to resize some of the site images.
 * [Font Awesome](https://fontawesome.com/) was used to improt icons to the sites.
 * [Chrome](https://www.google.com/intl/en_uk/chrome/) was used to debug and test the source code using HTML5 as well as to test site responsiveness.
 * [Github](https://github.com/) was used to create the repository and to store the cproject's code after pushed from Git.
 * [Gitpod](https://www.gitpod.io/) was used as the Code Editor for the site
 
 * [WebAim](https://webaim.org/resources/contrastchecker/) was used to select the background and font color in the website.
-* [W3C Markup](https://validator.w3.org/) and [Jigsaw validation](https://jigsaw.w3.org/) tools were used to validate the HTML code and CSS style used in the proejct.
+* [W3C Markup](https://validator.w3.org/) tool was used to validate the HTML code  used in the proejct.
+* [Jigsaw validation](https://jigsaw.w3.org/) tool was used to validate CSS style used in the proejct.
+* [Jshint validation](https://jshint.com/) was used to validate JavaScript code used in the proejct.
 * [Ami](http://ami.responsivedesign.is/#) was used to develop a Mockup screenshot generator
+
   <a name="testing"></a>
 # 4. Testing
   [Go to the top](#table-of-contents)
@@ -193,7 +196,7 @@ The identified error was corrected by switching section to div and no error was 
 
 [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) was used to check for any error within my CSS stylesheet. No errors were found.
 
-![W3C CSS Validation](./assets/images/W3CCSS.jpg)
+![W3C CSS Validation](/assets/images/css-validation.jpg)
 
 
 ## 4.2 Manual Testing
