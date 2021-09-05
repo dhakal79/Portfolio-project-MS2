@@ -601,12 +601,12 @@ color: #24a707;
 .headline{
    font-size: 30px;
    padding: 10px;
-   left: 27%;
+   left: 40%;
    
    }
    
    .go-to-quiz{
-      left: 62%;
+      left: 68%;
    }
 
 /*Quiz page */
@@ -616,21 +616,21 @@ color: #24a707;
       height: 95%;
    }
    .quiz-heading{
-      margin-left: 450px;
+      margin-left: 700px;
       top: 270px;
     
    }
    .instruction-box-1 {
       transform: translate(-0% ,-0%);
       top: 30%;
-      left: 28%;
+      left: 35%;
       right: 15%;
       max-width: 600px;
    }
    .question-baskets {
       transform: translate(-0% ,-0%); 
       top: 30%; 
-      left: 20%; 
+      left: 31%; 
       right: 10%;
       width: 800px;
          }
@@ -706,6 +706,16 @@ h3{
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
+   /*Home page */
+   .headline{
+      font-size: 25px;
+      padding: 10px;
+      
+      }
+   .go-to-quiz{
+      left: 81%;
+   }   
+
      /* Quiz page */
 .quiz-heading{
    margin-left: 100px;
@@ -747,7 +757,13 @@ h3{
 @media screen and (max-width: 767px) {
 
    /*Home page */
-
+   .headline{
+      top: 50%;
+      left: 15%;
+      right: 15%;
+      font-size: 20px;
+      text-align: center;
+      }
    .go-to-quiz {
       font-size: 12px;
       width: 75px;
@@ -814,13 +830,6 @@ h3{
    height: 95%;
    margin-top: 50px;
 }
-.headline{
-   top: 50%;
-   left: 15%;
-   right: 15%;
-   font-size: 20px;
-   text-align: center;
-   }
 
    .message{
       font-size: 18px;
