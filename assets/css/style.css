@@ -483,6 +483,15 @@
      max-width: 800px;
      display: flex;
 }
+
+#response {
+     padding: 10px;
+     background: lightgreen;
+     display: none;
+     border-radius: 3px;
+     border: 1px solid black;
+     width: 300px;
+ }
 /* media querries */
 /*For screen size larger than 1400px */
  @media screen and (min-width: 1401px) {

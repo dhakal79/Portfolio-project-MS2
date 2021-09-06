@@ -1,8 +1,6 @@
 //  targeting  main variables and id´s of home page and quiz box
 const startButton = document.getElementById("btn-quiz-rule");
 const questionBox = document.getElementById("question-box");
-//const previousQuestion = document.getElementById("previous-question");
-//const nextQuestion = document.getElementById("next-question");
 const instructionBox = document.getElementById("box");
 const startQuiz = document.getElementById("start-quiz");
 
@@ -11,10 +9,9 @@ const startQuiz = document.getElementById("start-quiz");
 // adding addEventfunction (when the quiz rule button clicked)
 
 startButton.addEventListener("click", function() {
-    //questionBox.classList.remove("question-baskets");
     instructionBox.setAttribute("class", "instruction-box-1");
-    //$(".main-container").hide();
-});
+    });
+
 // targeting timer in the questions
 const timeH = document.querySelector('h3');
 let timeSecond = 200;
@@ -182,22 +179,6 @@ nextButton.addEventListener("click", function() {
 
 });
 
-// previous button function to click to go to previous question.
-
-//const previousButton = document.getElementById("previous-question");
-
-//previousButton.addEventListener("click", function () {
-//if (currentQuestion < questions.length - 1) {
-//currentQuestion--;
-//allQuestion(currentQuestion);
-//} else {
-//console.log("successfully loaded");
-//quizFinalResult();
-//}
-
-//});
-
-
 // select answer option if the answer is correct do x and if the answer is incorrect do y.
 
 function selectedAnswers(correctAnswer) {
@@ -214,16 +195,7 @@ function selectedAnswers(correctAnswer) {
     } else {
         correctAnswer.classList.add("red");
         incrementWrongAnswer();
-
-        //if the user answer is incorrect ! correct answer will  automatically pop up with green highlight.
-
-        // for (let x = 0; x < allAnswers; x++) {
-        // if (answerContent.children[x].innerText === goodAnswer) {
-        //    answerContent.children[x].classList.add("green");
-        //}
-
-        // }
-
+        
     }
 
     // unable answer once one answer is clicked by user.
