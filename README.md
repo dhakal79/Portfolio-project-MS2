@@ -129,29 +129,28 @@ The screenshot of home page is below:
 - On clicking button "Quiz rule" it provides instruction to the quiz and "start quiz" button. The screenshot is below:
 ![quiz page preview](/assets/images/quiz-page-instruction.jpg)
 
-- page provides information in both text as well as graphs.
-- This page also provides the Table of content that helps users what topics needs to be covered in this course
+- On clicking to start quiz button, the page is provided with a page that contains question banks.The page has question with 3 to 4 options to select answer. On top of page timer is provided to alert the user the remaining time to finish the quiz. The page also has next button, which will be active once answer option is selected. Once the user click the next button, the next question will appear until it reach to question 15. At the bottom of the page there is an option to provides the number of correct and incorrect answers given by the user.
+![quiz page preview](/assets/images/question-bank.jpg)
 
-The screenshot of theory page is below:
-
- Theory page UI:
-  ![theory page preview](./assets/images/theory-end-product.jpg)
-
+- After completing 15 questions, a score box will appear that will highlight the 3 message to the users depending upon how many answers are correct i.e., i) >13 out of 15 ii) >=7 and iii)<7
+- the score box has a try again button which will redirect the user to question bank 1. At this stage the timer is set again back to 200 second.
+![quiz page preview](/assets/images/score-sheet.jpg)
 
 ### Feedback page:
-- Include contact form that provides the user the ability to message site owner, provide feedback and suggestions. 
-- Inlcude module evaluation forms where users can choose the options from (strongly agree, agree, neutral, disagree, strongly disagree) using radio-button option.
-- Provide Submit and Reset buttons with hoever effect on it
+- Include contact form that provides the user the ability to provide comments and feedback about the quiz. 
+-Provide Submit and Reset buttons with hoever effect on it
 - The form use the method="POST" action="https://formdump.codeinstitute.net/"
 - I use the option of placeholder for full name and email address.
+- If the user tries to submit the form without any message a pop up will appear to alert user to provide feedback.
 
 The screenshot of feedback page is below:
 
   Feedback page UI:
-  ![feedback page preview](./assets/images/feedback-end-product.jpg)
+  ![feedback page preview](/assets/images/feedback.jpg)
 
 The feedback form was correctly submitted  as  shown below.
 ![feedback page submission](./assets/images/form.jpg)
+
    <a name="technologies-used"></a>
 # 3. Technologies Used
   [Go to the top](#table-of-contents)
