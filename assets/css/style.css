@@ -499,31 +499,31 @@
      .headline{
          font-size: 30px;
          padding: 10px;
-         left: 40%;
+         left: 30%;
     }
      .go-to-quiz{
-         left: 68%;
+         left: 65%;
     }
-    /*Quiz page */
+    
     /*quiz page */
      .hero{
          height: 95%;
     }
      .quiz-heading{
-         margin-left: 650px;
+         margin-left: 520px;
          top: 270px;
     }
      .instruction-box-1 {
          transform: translate(-0% ,-0%);
          top: 30%;
-         left: 35%;
+         left: 32%;
          right: 15%;
          max-width: 600px;
     }
      .question-baskets {
          transform: translate(-0% ,-0%);
-         top: 30%;
-         left: 31%;
+         top: 25%;
+         left: 25%;
          right: 10%;
          width: 800px;
     }
@@ -547,10 +547,10 @@
      .headline{
          font-size: 30px;
          padding: 10px;
-         left: 15%;
+         left: 25%;
     }
      .go-to-quiz{
-         left: 68%;
+         left: 65%;
     }
     /*quiz page */
      .quiz-heading{
