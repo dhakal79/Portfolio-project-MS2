@@ -177,7 +177,8 @@ The feedback form was correctly submitted  as  shown below.
   [Go to the top](#table-of-contents)
 ## 4.1 Testing using tools
 ### 4.1.1 Google Developer Tools
-I make use of google developer tools (Chrome DevTools) as debugging tools. Using this tool i inspect for every elements that I added in HTML and CSS style. Once I was happy with, I copy the CSS style code from Chrome DevTools and paste in my CSS style sheet.
+Google developer tools (Chrome DevTools) was used as debugging tools. Every elements that was added in HTML CSS style and Javascript was inspected and debugged until I was happy with. Once satisfied, the code was copied from Chrome DevTools and paste in the CSS style sheet.
+
 
 ### 4.1.2 Responsive Tools
 
@@ -188,14 +189,26 @@ In order to make sure that design web pages are responsive to all device sizes, 
 [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) was used to check for any errors within my HTML pages.
 
 ![W3C HTML Validation](./assets/images/W3Chtml.jpg)
-The HTML checker notified me an error in my index.html page. it suggested that i should consider using h2-h6 elements to the section with id='animation" in the page. 
+The HTML checker notified me an error in my quiz.html page such as;
+- Consider using the h1 element as a top-level heading only (all h1 elements)
+- Section lacks heading, consider using h2-h6 elements
 
-The identified error was corrected by switching section to div and no error was found as shown in picture below.
-![W3C HTML error corrected](./assets/images/w3chtml-corrected.jpg)
+The HTML checker also notified me an error in my contact.html page such as;
+- Attribute type not allowed on element textarea at this point.
 
-[W3C CSS Validation](https://jigsaw.w3.org/css-validator/) was used to check for any error within my CSS stylesheet. No errors were found.
+The identified errors in both pages were corrected by inspecting in ChromeDevTools.
+
+
+[W3C CSS Validation](https://jigsaw.w3.org/css-validator/) was used to check for any error within my CSS stylesheet. It identified Parse Error which was corrected by identified an issue in the css style sheet. It was found that there was missing curlie bracket. After adding curlie bracket, no errors were found.
 
 ![W3C CSS Validation](/assets/images/css-validation.jpg)
+
+[Jshint validation](https://jshint.com/) was used to validate JavaScript code used in the proejct.
+It identified several errors such as;
+- missing semicolons in many lines
+- warning saying "const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)"
+
+The identified errors due the missing semicolon was corrected by adding semicolon in the JS code. While, the warning about available Es6 was corrected by clicking cofigure button on top right corner of Jshint and ticking "New JavaScript features (ES6)".
 
 
 ## 4.2 Manual Testing
