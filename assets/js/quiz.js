@@ -136,25 +136,24 @@ let questions = [{
 
 // function to getting all the questions and answer options from array .
 
-const questionContent = document.getElementById("question");
-var answerContent = document.getElementById("answer");
-const selectedAnswer = document.getElementsByClassName("answer-option");
+const question = document.getElementById("question");
+var answer = document.getElementById("answer");
+const choiceAnswer = document.getElementsByClassName("answer-option");
 const nextButton = document.getElementById("next-question");
 
 function allQuestion(event) {
     nextButton.setAttribute("disabled", true);
     let createTag = document.createElement("p").innerHTML = questions[event].number + ")" + " " + questions[event].question;
-    questionContent.innerHTML = createTag;
+    question.innerHTML = createTag;
     const lastAns = questions[event].answers[3] ? `<div class="answer-option" >` + `<p>` + questions[event].answers[3] + `</P></div>` : "";
-    let answerOption = `<div class="answer-option">` + `<p>` + questions[event].answers[0] + `</P></div>` +
+    let answerChoice = `<div class="answer-option">` + `<p>` + questions[event].answers[0] + `</P></div>` +
         `<div class="answer-option">` + `<p>` + questions[event].answers[1] + `</P></div>` +
         `<div class="answer-option"> ` + `<p>` + questions[event].answers[2] + `</P></div>` +
         lastAns;
-    answerContent.innerHTML = answerOption;
+    answer.innerHTML = answerChoice;
 
-
-    for (let i = 0; i < selectedAnswer.length; i++) {
-        selectedAnswer[i].setAttribute("onclick", "selectedAnswers(this)");
+    for (let i = 0; i < choiceAnswer.length; i++) {
+        choiceAnswer[i].setAttribute("onclick", "choiceAnswers(this)");
     }
 }
 
@@ -181,10 +180,10 @@ nextButton.addEventListener("click", function() {
 
 // select answer option if the answer is correct do x and if the answer is incorrect do y.
 
-function selectedAnswers(correctAnswer) {
+function choiceAnswers(correctAnswer) {
     let givenAnswer = correctAnswer.innerText;
     let goodAnswer = questions[currentQuestion].correctAnswer;
-    let allAnswers = answerContent.children.length;
+    let allAnswers = answer.children.length;
     nextButton.removeAttribute("disabled");
     if (givenAnswer === goodAnswer) {
         totalScoreAchieved += 1;
@@ -200,7 +199,7 @@ function selectedAnswers(correctAnswer) {
 
     // unable answer once one answer is clicked by user.
     for (let i = 0; i < allAnswers; i++) {
-        answerContent.children[i].classList.add("unable-answer");
+        answer.children[i].classList.add("unable-answer");
     }
 
 }
@@ -214,7 +213,7 @@ function incrementScore() {
 
 }
 
-// increament score for correct answers
+// increament score for wrong answers
 function incrementWrongAnswer() {
 
     let currentScore = parseInt(document.getElementById("incorrect-answer").innerText);
@@ -225,7 +224,6 @@ function incrementWrongAnswer() {
 // Final result box.
 
 const restartQuiz = document.getElementById("try");
-
 
 function quizFinalResult() {
     questionBox.classList.remove("question-containers");
