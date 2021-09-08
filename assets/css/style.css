@@ -502,7 +502,7 @@
          left: 30%;
     }
      .go-to-quiz{
-         left: 65%;
+         left: 58%;
     }
     
     /*quiz page */
@@ -510,12 +510,12 @@
          height: 95%;
     }
      .quiz-heading{
-         margin-left: 520px;
+         margin-left: 630px;
          top: 270px;
     }
      .instruction-box-1 {
          transform: translate(-0% ,-0%);
-         top: 30%;
+         top: 25%;
          left: 32%;
          right: 15%;
          max-width: 600px;
