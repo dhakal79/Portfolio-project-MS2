@@ -4,13 +4,20 @@ const questionBox = document.getElementById("question-box");
 const instructionBox = document.getElementById("box");
 const startQuiz = document.getElementById("start-quiz");
 
-
-
 // adding addEventfunction (when the quiz rule button clicked)
 
 startButton.addEventListener("click", function() {
     instructionBox.setAttribute("class", "quiz_rule");
     });
+
+//  adding addEventfunction ( targeting the start quiz button inside instruction box  )
+
+startQuiz.addEventListener("click", function() {
+    instructionBox.classList.remove("quiz_rule");
+    questionBox.setAttribute("class", "question-baskets");
+    instructionBox.classList.add("hide");
+    timeSecond = 50;
+});
 
 // targeting timer in the questions
 const timeH = document.querySelector('h3');
@@ -27,15 +34,6 @@ const countDown = setInterval(() => {
                         
     }
 }, 1000);
-
-//  adding addEventfunction ( targeting the start quiz button inside instruction box  )
-
-startQuiz.addEventListener("click", function() {
-    instructionBox.classList.remove("quiz_rule");
-    questionBox.setAttribute("class", "question-baskets");
-    instructionBox.classList.add("hide");
-    timeSecond = 50;
-});
 
 // Array of Questions and Answers.
 

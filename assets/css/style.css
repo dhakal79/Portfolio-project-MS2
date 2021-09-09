@@ -477,7 +477,7 @@
          left: 30%;
     }
      .go-to-quiz{
-         left: 58%;
+         left: 65%;
     }
     
     /*quiz page */
@@ -485,7 +485,7 @@
          height: 95%;
     }
      .quiz-heading{
-         margin-left: 630px;
+         margin-left: 530px;
          top: 270px;
     }
      .quiz_rule {
@@ -514,6 +514,9 @@
     }
      .highlight-message-1 {
          font-size: 15px;
+    }
+    .try-quiz-again{
+        top: 55%;
     }
 }
 /*For screen size larger than 993px */
