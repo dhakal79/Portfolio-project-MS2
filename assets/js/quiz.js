@@ -23,6 +23,7 @@ const countDown = setInterval(() => {
     timeH.innerHTML = `${timeSecond} sec time remaining`; //timeSecond + ' sec time remaining';
     if (timeSecond < 0 || timeSecond < 1) {
         clearInterval(countDown);
+        quizFinalResult();
     }
 }, 1000);
 
@@ -230,7 +231,12 @@ function quizFinalResult() {
     questionBox.setAttribute("class", "hide");
     restartQuiz.setAttribute("class", "try-quiz-again");
     let finalScore = document.getElementById("score");
-    if (totalScoreAchieved > 13) {
+    if (timeSecond ===0){
+        finalScore.innerHTML =
+        `<span class="highlight-message">` + `Sorry!!! Your time is out! <br> Please try again!! <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`; 
+    }
+
+    else if (totalScoreAchieved > 13) {
         finalScore.innerHTML =
             `<span class="highlight-message">` + `Well done!!! You master the topic! <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`;
     } else if (totalScoreAchieved >= 7) {
@@ -243,6 +249,8 @@ function quizFinalResult() {
     }
 
 }
+
+
 
 // try quiz again button that directs to start of quiz page page
 const restartButton = document.getElementById("try-again");
