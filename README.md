@@ -260,7 +260,15 @@ Accessibility | Checked the accessibility of the page using lighthouse| PASS
 ### Quiz page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media| All images on the pages load. All images were checked if it blurred in differnt screen sizes| PASS
+Quiz Rule button| Checked when clicked quiz rule button, quiz instruction box apprears or not| PASS
+Start quiz button| Checked when clicked start quiz button, question box apprears or not| PASS
+Hiding of instruction box|Checked when clicked start quiz button, instruction box disappears or not| PASS
+Next button| Checked if next button is disabled or not if answer option is not selected and vise versa| PASS
+Hiding of previous questions box| Checked when clicked with next button, the previous question box dissapear or not|PASS
+Score card|Checked if the score increases once answer option is selected| PASS
+Final assessment message|Checked when clicked next button of final questions, final score card with message apprear or not|PASS
+Try again|Checked when clicked try again button, it will redirect to first question or not| PASS
+Timer|Checked if timer is displaying correctly or not and when clicked to try again button if it is reset to original 200 sec or not|PASS
 Responsive | Responsive of the page in differnce screen sizes (mobile and website) using differnt breakpoints were checked.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 
@@ -271,9 +279,7 @@ TEST            | OUTCOME                          | PASS / FAIL
 --------------- | -------------------------------- | ---------------
 Responsive | Responsive of the page in differnce screen sizes (mobile and website) using differnt breakpoints were checked.| PASS
 Submit/Reset| Checked if submit and reset button works or not|PASS
-Radio buttons| Checked if radio button works or not|PASS
-Placeholder| Checked if placeholder on the full name and email addres works or not|PASS
-Google map| Checked if google map when clicked on view larger map redirect to the google map page in new tab works ot not|PASS
+Placeholder| Checked if placeholder on the full name, email addres and text box works or not|PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 
 ![Contact-html page accessibility](/assets/images/feedback-accessibility.jpg)
@@ -298,22 +304,21 @@ The site was deployed to GitHub pages using the following steps:
 - Select pages on the left menu bar.
 - Click on the master branch and save.
 - This will now generate a link with your website live.
-- The live link can be found here - (https://dhakal79.github.io/Portfolio-project-MS1/)
+- The live link can be found here - (https://dhakal79.github.io/Portfolio-project-MS2/)
 
   <a name="acknowledgement"></a>
 # 7. Acknowledgement
   [Go to the top](#table-of-contents)
 ### Code
-* The footer code came from the Love Running projects
-* The code for image animation on index.html page came from the Love Running projects
-* Naviagtion drop down menu code came from a youtube video https://www.youtube.com/watch?v=wHFflWvii3M&t=508s
+* The footer code came from the Love Running projects (taken from my first project)
+* The code for image animation on index.html page taken from youtube video projects https://www.youtube.com/watch?v=AKmoccuRiN4
 * Coding for feedback.html page was inspired from differnt tutorial from https://codeinstitute.net/ 
+* Quiz page design, some css style and javascript code was inspired/taken  from https://github.com/jas-sin82/milestone-project-2 found in google search and modified.
 * The icons in the footer and contact page came from [Font Awesome](https://fontawesome.com/)
-* For README.md file, reference of https://github.com/Chris-McGonigle/emmas-beauty-parlour and https://github.com/iKelvvv/MS1 was considered. 
+* For README.md file, reference from my first project was considered. 
 * Thanks to my mentor Marcel Mulders for his constructive feedback.
 
 ### Content 
- * All the contents for index.html page age came from https://www.un-ihe.org/unit-operations-water-treatment-coagulation-sedimentation-flotation-and-filtration
- * All the content for theory.html came from lecture note IHE Delft.
- * The front page water image in index.html came from [Google Images](https://www.google.com/imghp?hl=en)
+ * Some of the quiz questions were taken from https://ocw.tudelft.nl/course-exercises/test-coagulation-and-flocculation/
+ * Images were taken from [Google Images](https://www.google.com/imghp?hl=en)
   
