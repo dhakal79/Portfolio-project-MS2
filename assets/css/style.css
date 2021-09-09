@@ -329,6 +329,7 @@
      justify-content: center;
      text-align: center;
      font-weight: 500;
+     font-size: 30px;
 }
  #try-again{
      text-align: center;
@@ -347,13 +348,12 @@
 }
 .highlight-message{
     color: #830202;
-    
-   
+        
 }
 
  .highlight-message-1{
      color: #075804;
-     font-size: 20px;
+     font-size: 0px;
  }    
  .highlight-message-2{
      color: #7C4003
@@ -676,10 +676,14 @@
          margin-top: 50px;
     }
      .message{
-         font-size: 18px;
+         font-size: 15px;
     }
      .try-quiz-again{
          top: 65%;
+         right: -15%;
+    }
+    .final-outcome{
+        font-size: 15px;
     }
     /*contact page */
      .contact-details {

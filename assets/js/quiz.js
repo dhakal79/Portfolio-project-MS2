@@ -14,7 +14,7 @@ startButton.addEventListener("click", function() {
 
 // targeting timer in the questions
 const timeH = document.querySelector('h3');
-let timeSecond = 200;
+let timeSecond = 50;
 
 timeH.innerHTML = timeSecond;
 
@@ -24,10 +24,9 @@ const countDown = setInterval(() => {
     if (timeSecond < 0 || timeSecond < 1) {
         clearInterval(countDown);
         quizFinalResult();
-        
+                        
     }
 }, 1000);
-
 
 //  adding addEventfunction ( targeting the start quiz button inside instruction box  )
 
@@ -35,7 +34,7 @@ startQuiz.addEventListener("click", function() {
     instructionBox.classList.remove("quiz_rule");
     questionBox.setAttribute("class", "question-baskets");
     instructionBox.classList.add("hide");
-    timeSecond = 200;
+    timeSecond = 50;
 });
 
 // Array of Questions and Answers.
@@ -234,7 +233,7 @@ function quizFinalResult() {
     let finalScore = document.getElementById("score");
     if (timeSecond === 0){
         finalScore.innerHTML =
-        `<span class="highlight-message">` + `Sorry!!! Your time is out! <br> Please try again!! <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`; 
+        `<span class="highlight-message">` + `Sorry!!! Your time was out! <br> You did not answer all question!! <br> Try again!!<br> Your Score is <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`; 
        
     }
 
@@ -252,8 +251,6 @@ function quizFinalResult() {
 
 }
 
-
-
 // try quiz again button that directs to start of quiz page page
 const restartButton = document.getElementById("try-again");
 restartButton.addEventListener("click", function() {
@@ -261,7 +258,7 @@ restartButton.addEventListener("click", function() {
     restartQuiz.setAttribute("class", "hide");
     questionBox.setAttribute("class", "question-baskets");
     currentQuestion = 0;
-    timeSecond = 200;
+    timeSecond = 50;
     allQuestion(currentQuestion);
     document.getElementById("right-answer").innerText = totalScoreAchieved = 0;
     document.getElementById("wrong-answer").innerText = totalScoreAchieved = 0;
