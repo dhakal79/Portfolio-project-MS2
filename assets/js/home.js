@@ -1,19 +1,19 @@
 // nanimation front page
-const hero = document.querySelector('.hero')
-const headline = document.querySelector('.headline')
+const hero = document.querySelector('.hero');
+const headline = document.querySelector('.headline');
 
 const tl = new TimelineMax();
 tl.fromTo(hero, 1, {
         height: "0%"
     }, {
         height: "80%",
-        ease: Power2.easeInOut
+        //ease: Power2.easeInOut
     })
     .fromTo(hero, 1, {
         width: "100%"
     }, {
         width: "80%",
-        ease: Power2.easeInOut
+       // ease: Power2.easeInOut
     })
     .fromTo(headline, 0.1, {
         opacity: 0,
@@ -24,7 +24,7 @@ tl.fromTo(hero, 1, {
     }, "-=0.5");
 
 // animate the text 
-const text = document.querySelector('.headline')
+const text = document.querySelector('.headline');
 const strText = text.textContent;
 const splitText = strText.split("");
 text.textContent = "";
@@ -40,7 +40,7 @@ let timer = setInterval(onTick, 200);
 function onTick() {
     const span = text.querySelectorAll('span')[char];
     span.classList.add('fade');
-    char++
+    char++;
     if (char === splitText.length) {
         complete();
         return;
