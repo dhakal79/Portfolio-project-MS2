@@ -9,7 +9,7 @@ const startQuiz = document.getElementById("start-quiz");
 // adding addEventfunction (when the quiz rule button clicked)
 
 startButton.addEventListener("click", function() {
-    instructionBox.setAttribute("class", "instruction-box-1");
+    instructionBox.setAttribute("class", "quiz_rule");
     });
 
 // targeting timer in the questions
@@ -30,7 +30,7 @@ const countDown = setInterval(() => {
 //  adding addEventfunction ( targeting the start quiz button inside instruction box  )
 
 startQuiz.addEventListener("click", function() {
-    instructionBox.classList.remove("instruction-box-1");
+    instructionBox.classList.remove("quiz_rule");
     questionBox.setAttribute("class", "question-baskets");
     instructionBox.classList.add("hide");
     timeSecond = 200;
@@ -42,93 +42,93 @@ let questions = [{
         number: 1,
         question: "The main objectives of the coagulation process for drinking water preparation are",
         answers: ["Suspended and colloidal particles", "Dissolved matter", "Both", "None"],
-        correctAnswer: "Both",
+        rightAnswer: "Both",
     },
     {
         number: 2,
         question: "Indicate possible locations of coagulation in the treatment train",
         answers: ["Before storage", "Before filtration", "Before ozonation", "Before GAC"],
-        correctAnswer: "Before storage",
+        rightAnswer: "Before storage",
     },
     {
         number: 3,
         question: "Which of the following chemicals is used as coagulant?",
         answers: ["KMNO<sub>4</sub>", "FeCl<sub>3</sub>", "Ca(OH)<sub>2</sub>"],
-        correctAnswer: "FeCl3",
+        rightAnswer: "FeCl3",
     },
     {
         number: 4,
         question: "Jar tests are executed to determine",
         answers: ["Optimal coagulant dose", "pH", "Both", "None"],
-        correctAnswer: "Both",
+        rightAnswer: "Both",
     },
     {
         number: 5,
         question: "The term Enhanced Coagulation is used when the purpose is to remove",
         answers: ["Turbidity", "Organic matter", "Pathogenic micro-organisms", "Organic micro-pollutants"],
-        correctAnswer: "Organic matter",
+        rightAnswer: "Organic matter",
     },
     {
         number: 6,
         question: "At lower temperatures coagulation can be enhanced by the following method",
         answers: ["Higher cogulant doses", "Increase impeller speed", "Applying coagulant aids", "All of the above"],
-        correctAnswer: "All of the above",
+        rightAnswer: "All of the above",
     },
     {
         number: 7,
         question: "The type of flocculation where agglomeration is accomplished by agitation in the suspension is refered as:",
         answers: ["Ortho-kinetic flocculation", "Peri-kinetic flocculation", "Both"],
-        correctAnswer: "Ortho-kinetic flocculation",
+        rightAnswer: "Ortho-kinetic flocculation",
     },
     {
         number: 8,
         question: "How can we increase the sedimentation rate of the turbidity causing colloidal particles?",
         answers: ["Neutralisation of the surface charge ", "Enlarging of the colloids by agglomeration", "Both", "None"],
-        correctAnswer: "Both",
+        rightAnswer: "Both",
 
     },
     {
         number: 9,
         question: "The charge of colloidal particles at iso-electric point is",
         answers: ["Positive", "Negative", "No charge"],
-        correctAnswer: "No charge",
+        rightAnswer: "No charge",
 
     },
     {
         number: 10,
         question: "After dosage of coagulant, fast and intensive agitation (“rapid mixing”) is needed to",
         answers: ["Distribute adsorbing species quickly", "Prevent local high coagulant concentrations", "Both", "None"],
-        correctAnswer: "Both",
+        rightAnswer: "Both",
     },
     {
         number: 11,
         question: " The process of removing of the repulsive surface charge by adding coagulants followed by rapid mixing is called",
         answers: ["Flocculation", "Destabilisation", "Separation"],
-        correctAnswer: "Destabilisation",
+        rightAnswer: "Destabilisation",
     },
     {
         number: 12,
         question: " Which of the following components in water are largely removed by coagulation process.",
         answers: ["Turbidity", "Phosphate", "Color", "All of the above"],
-        correctAnswer: "All of the above",
+        rightAnswer: "All of the above",
     },
     {
         number: 13,
         question: "The type of coagulation mechanisms when it is refers to incorporation in hydroxide flocs is ",
         answers: ["Sweep Coagulation", "Adsorptive Coagulation", "Electrostatic Coagulation", "All of the above"],
-        correctAnswer: "Sweep Coagulation",
+        rightAnswer: "Sweep Coagulation",
     },
     {
         number: 14,
         question: "How will the pH of water change after adding alum? ",
         answers: ["pH will drop", "pH will increase", "Neutral"],
-        correctAnswer: "pH will drop",
+        rightAnswer: "pH will drop",
     },
     {
         number: 15,
         question: " What is the recommended detention time ( t ) of water in rapid mixer?",
         answers: ["5 minute", "2 minute", "3 minute", "less than 1 minute"],
-        correctAnswer: "less than 1 minute",
+        rightAnswer: "less than 1 minute",
     },
 
 ];
@@ -180,20 +180,20 @@ nextButton.addEventListener("click", function() {
 
 // select answer option if the answer is correct do x and if the answer is incorrect do y.
 
-function choiceAnswers(correctAnswer) {
-    let givenAnswer = correctAnswer.innerText;
-    let goodAnswer = questions[currentQuestion].correctAnswer;
+function choiceAnswers(rightAnswer) {
+    let givenAnswer = rightAnswer.innerText;
+    let goodAnswer = questions[currentQuestion].rightAnswer;
     let allAnswers = answer.children.length;
     nextButton.removeAttribute("disabled");
     if (givenAnswer === goodAnswer) {
         totalScoreAchieved += 1;
 
         // change color to green and red when answer is correct and incorrect, respectively.
-        correctAnswer.classList.add("color1");
-        incrementScore();
+        rightAnswer.classList.add("color1");
+        increamentScore();
     } else {
-        correctAnswer.classList.add("color2");
-        incrementWrongAnswer();
+       rightAnswer.classList.add("color2");
+        increamentWrongAnswer();
         
     }
 
@@ -206,18 +206,18 @@ function choiceAnswers(correctAnswer) {
 
 // increament score for correct answers
 
-function incrementScore() {
+function increamentScore() {
 
-    let currentScore = parseInt(document.getElementById("correct-answer").innerText);
-    document.getElementById("correct-answer").innerText = ++currentScore;
+    let currentScore = parseInt(document.getElementById("right-answer").innerText);
+    document.getElementById("right-answer").innerText = ++currentScore;
 
 }
 
 // increament score for wrong answers
-function incrementWrongAnswer() {
+function increamentWrongAnswer() {
 
-    let currentScore = parseInt(document.getElementById("incorrect-answer").innerText);
-    document.getElementById("incorrect-answer").innerText = ++currentScore;
+    let currentScore = parseInt(document.getElementById("wrong-answer").innerText);
+    document.getElementById("wrong-answer").innerText = ++currentScore;
 
 }
 
@@ -253,6 +253,6 @@ restartButton.addEventListener("click", function() {
     currentQuestion = 0;
     timeSecond = 200;
     allQuestion(currentQuestion);
-    document.getElementById("correct-answer").innerText = totalScoreAchieved = 0;
-    document.getElementById("incorrect-answer").innerText = totalScoreAchieved = 0;
+    document.getElementById("right-answer").innerText = totalScoreAchieved = 0;
+    document.getElementById("wrong-answer").innerText = totalScoreAchieved = 0;
 });
