@@ -14,16 +14,17 @@ startButton.addEventListener("click", function() {
 
 // targeting timer in the questions
 const timeH = document.querySelector('h3');
-let timeSecond = 200;
+let timeSecond = 10;
 
 timeH.innerHTML = timeSecond;
 
 const countDown = setInterval(() => {
     timeSecond--;
-    timeH.innerHTML = `${timeSecond} sec time remaining`; //timeSecond + ' sec time remaining';
+    timeH.innerHTML = `${timeSecond} sec time remaining`; 
     if (timeSecond < 0 || timeSecond < 1) {
         clearInterval(countDown);
         quizFinalResult();
+        
     }
 }, 1000);
 
@@ -34,7 +35,7 @@ startQuiz.addEventListener("click", function() {
     instructionBox.classList.remove("quiz_rule");
     questionBox.setAttribute("class", "question-baskets");
     instructionBox.classList.add("hide");
-    timeSecond = 200;
+    timeSecond = 10;
 });
 
 // Array of Questions and Answers.
@@ -238,14 +239,14 @@ function quizFinalResult() {
 
     else if (totalScoreAchieved > 13) {
         finalScore.innerHTML =
-            `<span class="highlight-message">` + `Well done!!! You master the topic! <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`;
+            `<span class="highlight-message-1">` + `Well done!!! You master the topic! <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`;
     } else if (totalScoreAchieved >= 7) {
         finalScore.innerHTML =
-            `<span class="highlight-message-1">` + `Not too bad! <br><span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> <br> Good luck for better result next time !</span>`;
+            `<span class="highlight-message-2">` + `Not too bad! <br><span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> <br> Good luck for better result next time !</span>`;
 
     } else {
         finalScore.innerHTML =
-            `<span class="highlight-message-2">` + ` Too bad ! You need to study more <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> Out Of <span>` + questions.length + `</span> <br> Take time to study in depth and try again!  !</span>`;
+            `<span class="highlight-message-3">` + ` Too bad ! You need to study more <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> Out Of <span>` + questions.length + `</span> <br> Take time to study in depth and try again!  !</span>`;
     }
 
 }
@@ -259,7 +260,7 @@ restartButton.addEventListener("click", function() {
     restartQuiz.setAttribute("class", "hide");
     questionBox.setAttribute("class", "question-baskets");
     currentQuestion = 0;
-    timeSecond = 200;
+    timeSecond = 10;
     allQuestion(currentQuestion);
     document.getElementById("right-answer").innerText = totalScoreAchieved = 0;
     document.getElementById("wrong-answer").innerText = totalScoreAchieved = 0;

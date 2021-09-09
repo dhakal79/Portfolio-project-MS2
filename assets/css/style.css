@@ -345,14 +345,23 @@
  #try-again:hover{
      background:#64b3f4;
 }
- .highlight-message{
-     color: #24a707;
+.highlight-message{
+    color: #ca0909;
+    
+   
 }
+
  .highlight-message-1{
-     color: rgb(155, 104, 9);
-}
+     color: #075804;
+     font-size: 20px;
+ }    
  .highlight-message-2{
-     color: rgb(250, 12, 12);
+     color: rgb(155, 128, 9);
+     font-size: 20px;
+}
+ .highlight-message-3{
+     color: rgb(250, 107, 12);
+     font-size: 20px;
 }
 /* footer */
  .social-media {
