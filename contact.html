@@ -12,7 +12,7 @@
   <body>
     <!--IHE logo-->
     <div id="logo">
-      <h1>IHE Delft</h1>
+      <h1 aria-label="Welcome to IHE Delft">IHE Delft</h1>
     </div>
     <!--Navigation bar-->
     <div class="menu-bar">
@@ -34,23 +34,23 @@
         <form method="POST" action="https://formdump.codeinstitute.net/" id="form" name="form" class="contact-form" target="_blank" onsubmit= "return CheckForm()">
           <!--title for the form-->
           <div class="contact-heading">
-            <h1>Provide feedback to us</h1>
+            <h1 aria-label="Please provide feedback abour quiz app">Provide feedback to us</h1>
           </div>
           <!--code for contact details and icons-->
           <div class="contact-details">
-            <h2>Your details</h2>
+            <h2 aria-label="please provide your details">Your details</h2>
             <label for="fname">Full Name<i class="fas fa-user"></i></label>
-            <input id="fname" name="full-name" class="text-adjust" placeholder="Type your full name here" type="text" required>
+            <input id="fname" name="full-name" class="text-adjust" placeholder="Type your full name here" type="text" aria-label="provide your full name" required>
             <label for="email">Email Address<i class="fas fa-at"></i></label>
-            <input type="email" id="email" name="email-address" placeholder="Type your email address here" required>
+            <input type="email" id="email" name="email-address" placeholder="Type your email address here" aria-label="provide your email address" required>
           </div>
           <!--code for feedback questtionnaire and-->
           <div class="additional-remarks">
-            <h2>Your feedback for further improvement<i class="fas fa-pencil-alt"></i></h2>
+            <h2 aria-label="here you can provide comment in written">Your feedback for further improvement<i class="fas fa-pencil-alt"></i></h2>
             <textarea name ="comment" id="comment" placeholder="Please type your feedback here" required></textarea>
           </div>
-          <input type="submit" class="submit-button" value="Submit">
-          <input type="reset" onclick ="clearForm" class="submit-button" value="Reset">
+          <input type="submit" class="submit-button" value="Submit" aria-label="please click submit button">
+          <input type="reset" onclick ="clearForm" class="submit-button" value="Reset" aria-label="please click reset button">
         </form>
         <div id="response">
           <!-- Response for the second form will go here -->

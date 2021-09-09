@@ -232,9 +232,10 @@ function quizFinalResult() {
     questionBox.setAttribute("class", "hide");
     restartQuiz.setAttribute("class", "try-quiz-again");
     let finalScore = document.getElementById("score");
-    if (timeSecond ===0){
+    if (timeSecond === 0){
         finalScore.innerHTML =
         `<span class="highlight-message">` + `Sorry!!! Your time is out! <br> Please try again!! <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`; 
+       
     }
 
     else if (totalScoreAchieved > 13) {
