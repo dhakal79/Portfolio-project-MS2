@@ -669,9 +669,10 @@
          font-size: 18px;
          color: #3498db;
     }
-     .question-heading h2{
+     .question-title h2{
          font-size: 18px;
          font-weight: bold;
+        
     }
      .questions{
          font-size: 17px;
