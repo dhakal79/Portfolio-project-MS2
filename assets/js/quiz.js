@@ -189,17 +189,17 @@ function choiceAnswers(correctAnswer) {
         totalScoreAchieved += 1;
 
         // change color to green and red when answer is correct and incorrect, respectively.
-        correctAnswer.classList.add("green");
+        correctAnswer.classList.add("color1");
         incrementScore();
     } else {
-        correctAnswer.classList.add("red");
+        correctAnswer.classList.add("color2");
         incrementWrongAnswer();
         
     }
 
-    // unable answer once one answer is clicked by user.
+    // Once answer option is selected other options are disable to select again.
     for (let i = 0; i < allAnswers; i++) {
-        answer.children[i].classList.add("unable-answer");
+        answer.children[i].classList.add("disable");
     }
 
 }

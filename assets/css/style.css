@@ -108,10 +108,14 @@
      justify-content: center;
      margin-left: 700px;
 }
- .quiz-heading h1{
-     font-size: 18px;
+ .quiz-heading h2{
+     font-size: 22px;
      color: white;
      text-align: center;
+     background: #3452a7;
+     opacity: 0.98;
+     padding: 5px;
+    
 }
  .rule{
      width: 150px;
@@ -230,23 +234,24 @@
      padding:8px;
      margin:14px;
      background: #d6e0e0;
-     border:none;
      border-radius: 5px;
      cursor: pointer;
      font-size: 18px;
 }
-/* color change to green when answer is correct */
+/* color change when answer is correct */
 
- .answer-option.green{
+ .answer-option.color1{
      background: #0A4B02;
      color: #fff;
+     
 }
-/* icolor chnage to red when answer is incorrect */
- .answer-option.red{
+/* color chnage when answer is incorrect */
+ .answer-option.color2{
      background: #942424;
      color:#fff;
+    
 }
- .answer-option.unable-answer{
+ .answer-option.disable{
      pointer-events: none;
 }
 /* style for button */
@@ -656,8 +661,9 @@
          font-size: 14px;
          margin-top: 15px;
          text-align: center;
-         margin-left: 35px;
+         margin-left: 45px;
          margin-right: 25px;
+         width: 270px;
     }
      .quiz-rule h2{
          font-size: 18px;
