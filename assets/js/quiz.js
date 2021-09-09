@@ -14,7 +14,7 @@ startButton.addEventListener("click", function() {
 
 // targeting timer in the questions
 const timeH = document.querySelector('h3');
-let timeSecond = 10;
+let timeSecond = 200;
 
 timeH.innerHTML = timeSecond;
 
@@ -35,7 +35,7 @@ startQuiz.addEventListener("click", function() {
     instructionBox.classList.remove("quiz_rule");
     questionBox.setAttribute("class", "question-baskets");
     instructionBox.classList.add("hide");
-    timeSecond = 10;
+    timeSecond = 200;
 });
 
 // Array of Questions and Answers.
@@ -261,7 +261,7 @@ restartButton.addEventListener("click", function() {
     restartQuiz.setAttribute("class", "hide");
     questionBox.setAttribute("class", "question-baskets");
     currentQuestion = 0;
-    timeSecond = 10;
+    timeSecond = 200;
     allQuestion(currentQuestion);
     document.getElementById("right-answer").innerText = totalScoreAchieved = 0;
     document.getElementById("wrong-answer").innerText = totalScoreAchieved = 0;
