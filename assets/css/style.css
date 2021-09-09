@@ -284,14 +284,14 @@
      display: flex;
      justify-content: center;
 }
- .points{
-     padding: 5px;
+ .minus-point{
+     padding: 6px;
      text-align: center;
      justify-content: center;
      color: #970202;
 }
- .point{
-     padding: 5px;
+ .plus-point{
+     padding: 6px;
      text-align: center;
      justify-content: center;
      color: #074013 
