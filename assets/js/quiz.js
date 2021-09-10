@@ -238,8 +238,7 @@ function quizFinalResult() {
     else if (totalScoreAchieved > 13) {
         finalScore.innerHTML =
             `<span class="highlight-message-1">` + `Well done!!! You master the topic! <br> Your Score is <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`;
-            
-           // document.getElementsByClassName ("highlight-message") ("hide");
+                       
     } else if (totalScoreAchieved >= 7) {
         finalScore.innerHTML =
             `<span class="highlight-message-2">` + `Not too bad! <br><span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> <br> Good luck for better result next time !</span>`;
