@@ -1,4 +1,3 @@
-p.
 # Quiz on Coagulation in Water Treatment 
 Welcome! [IHE Delft](http://un-ihe.org)
 ## Introduction
@@ -289,9 +288,15 @@ Accessibility | Checked the accessibility of the page using lighthouse| PASS
   [Go to the top](#table-of-contents)
 
 ### Solved bugs
-- When i checked the accessibility of feedback page i discovered i forget to add title to iframe (google map). I solved it by adding title "google map".
-- I also discovered that Form elements do not have associated labels. I solved this by adding assoviated labels. 
-- I saw a hyphens between social media icons. The problem with &lt;a &gt; tags. The problem was solved by writing in css style sheet that target &lt;a &gt; using text-decoration: none;
+- I found answer box was fixed for 4 options and when a question has only 3 options, the last box was written with undefined. I solved this issue by adding below code in javascript 
+const lastAns = questions[event].answers[3] ? `<div class="answer-option" >` + `<p>` + questions[event].answers[3] + `</P></div>` : "";
+
+- I found timer did not start from 200 sec after clicking start quiz button. I solved this by adding a code timeSecond = 200; in startQuiz function. Similar issue was see when restart the quiz, the time did not start with 200 sec. This was solved by add in a code timeSecond = 200; in restartButton function. 
+
+- I discovered missing semicolon in several lines of javascript code which was solved after validation with Jshint.
+- Initial gap was seen in the placeholder text in feedback page, which was solved by brining the closing tag of textarea in the same line.
+- I discoved missing semicolon after &nbsp, which was used to create a space between correct/incorrect answer and score.
+- I discoved the animation of character in the index page was not working and figured it out by playing with setInterval in javascript code.
 
   <a name="deployment"></a>
 # 6. Deployment
