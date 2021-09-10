@@ -288,8 +288,7 @@ Accessibility | Checked the accessibility of the page using lighthouse| PASS
   [Go to the top](#table-of-contents)
 
 ### Solved bugs
-- I found answer box was fixed for 4 options and when a question has only 3 options, the last box was written with undefined. I solved this issue by adding below code in javascript 
-const lastAns = questions[event].answers[3] ? `<div class="answer-option" >` + `<p>` + questions[event].answers[3] + `</P></div>` : "";
+- I found answer box was fixed for 4 options and when a question has only 3 options, the last box was written with undefined. I solved this issue by adding below code in javascript const lastAns in line 147
 
 - I found timer did not start from 200 sec after clicking start quiz button. I solved this by adding a code timeSecond = 200; in startQuiz function. Similar issue was see when restart the quiz, the time did not start with 200 sec. This was solved by add in a code timeSecond = 200; in restartButton function. 
 
