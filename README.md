@@ -1,4 +1,4 @@
-# Quiz on Coagulation in Water Treatment 
+ython3 # Quiz on Coagulation in Water Treatment 
 Welcome! [IHE Delft](http://un-ihe.org)
 ## Introduction
 Globally, degradation of surface water quality due to the presence of physical, chemical and biological impurities is a major issue that makes surface water unsafe to drink. Therefore, treatment of surface water is essential to make it pathogen free, chemically safe, with no dirt solid matter and aesthetically acceptable. In this context, there is a strong need to understand the theoretical aspect of various treatment options, its design principle and operation. Among the various treatment steps, coagulation process is the first steps in the treatment where we add coagulant to agglomerate small particles to larger in order to allow them to settle in the next treatment steps. 

@@ -27,9 +27,9 @@ timeH.innerHTML = timeSecond;
 
 const countDown = setInterval(() => {
     timeSecond--;
-    timeH.innerHTML = `${timeSecond} sec time remaining`; 
-    if (timeSecond < 0 || timeSecond < 1) {
-        clearInterval(countDown);
+    timeH.innerHTML = `${timeSecond} sec time remaining aaa`; 
+    if (timeSecond <= 0 ) {
+        //clearInterval(countDown);
         quizFinalResult();
                         
     }
@@ -232,7 +232,7 @@ function quizFinalResult() {
     if (timeSecond === 0){
         finalScore.innerHTML =
         `<span class="highlight-message">` + `Sorry!!! Your time was out! <br> You did not answer all question!! <br> Try again!!<br> Your Score is <br> <span>` + totalScoreAchieved + `</span> out of <span>` + questions.length + `</span> !</span>`; 
-       
+       timeSecond =50;
     }
 
     else if (totalScoreAchieved > 13) {
