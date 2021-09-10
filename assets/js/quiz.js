@@ -27,7 +27,7 @@ timeH.innerHTML = timeSecond;
 
 const countDown = setInterval(() => {
     timeSecond--;
-    timeH.innerHTML = `${timeSecond} sec time remaining aaa`; 
+    timeH.innerHTML = `${timeSecond} sec time remaining`; 
     if (timeSecond <= 0 ) {
         //clearInterval(countDown);
         quizFinalResult();
