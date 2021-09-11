@@ -4,6 +4,8 @@ const questionBox = document.getElementById("question-box");
 const instructionBox = document.getElementById("box");
 const startQuiz = document.getElementById("start-quiz");
 const TIMEOUT_SECONDS = 200;
+let correctAnswerCount = 0;
+let wrongAnswerCount = 0;
 
 // adding addEventfunction (when the quiz rule button clicked)
 
@@ -12,7 +14,7 @@ startButton.addEventListener("click", function() {
     });
 
 //  adding addEventfunction ( targeting the start quiz button inside instruction box  )
-
+//instructionBox.classList.add("hide");
 startQuiz.addEventListener("click", function() {
     instructionBox.classList.remove("quiz_rule");
     questionBox.setAttribute("class", "question-baskets");
@@ -194,19 +196,25 @@ function disableAllAnswers(answers){
 }
 // select answer option if the answer is correct do x and if the answer is incorrect.
 function chooseAnswer(selectedAnswer) {
+    if (selectedAnswer.target.className !== 'answer-option'){
+       return; 
+    }
+    
     const rightAnswer = selectedAnswer.target;
     let givenAnswer = rightAnswer.innerText;
     let goodAnswer = questions[currentQuestion].rightAnswer;
     nextButton.removeAttribute("disabled");
     if (givenAnswer === goodAnswer) {
         totalScoreAchieved += 1;
+        correctAnswerCount +=1;
 
         // change color to green and red when answer is correct and incorrect, respectively.
         rightAnswer.classList.add("color1");
-        increamentScore();
+        increamentScore(correctAnswerCount);
     } else {
        rightAnswer.classList.add("color2");
-        increamentWrongAnswer();
+       wrongAnswerCount +=1;
+        increamentWrongAnswer(wrongAnswerCount);
         
     }
     disableAllAnswers(answer);  
@@ -214,18 +222,14 @@ function chooseAnswer(selectedAnswer) {
 
 // increament score for correct answers
 
-function increamentScore() {
-
-    let currentScore = parseInt(document.getElementById("right-answer").innerText);
-    document.getElementById("right-answer").innerText = ++currentScore;
+function increamentScore(correctAnswerCount) {
+    document.getElementById("right-answer").innerText = correctAnswerCount;
 
 }
 
 // increament score for wrong answers
-function increamentWrongAnswer() {
-
-    let currentScore = parseInt(document.getElementById("wrong-answer").innerText);
-    document.getElementById("wrong-answer").innerText = ++currentScore;
+function increamentWrongAnswer(wrongAnswerCount) {    
+    document.getElementById("wrong-answer").innerText = wrongAnswerCount;
 
 }
 
