@@ -286,6 +286,6 @@ restartButton.addEventListener("click", function() {
     currentQuestion = 0;
     timeSecond = TIMEOUT_SECONDS;
     prepareQuestion(currentQuestion);
-    document.getElementById("right-answer").innerText = totalScoreAchieved = 0;
-    document.getElementById("wrong-answer").innerText = totalScoreAchieved = 0;
+    document.getElementById("right-answer").innerText = correctAnswerCount;
+    document.getElementById("wrong-answer").innerText = wrongAnswerCount;
 });
