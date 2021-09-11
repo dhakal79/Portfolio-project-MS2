@@ -3,6 +3,7 @@ const startButton = document.getElementById("btn-quiz-rule");
 const questionBox = document.getElementById("question-box");
 const instructionBox = document.getElementById("box");
 const startQuiz = document.getElementById("start-quiz");
+const TIMEOUT_SECONDS = 200;
 
 // adding addEventfunction (when the quiz rule button clicked)
 
@@ -16,12 +17,12 @@ startQuiz.addEventListener("click", function() {
     instructionBox.classList.remove("quiz_rule");
     questionBox.setAttribute("class", "question-baskets");
     instructionBox.classList.add("hide");
-    timeSecond = 10;
+    timeSecond = TIMEOUT_SECONDS;
 });
 
 // targeting timer in the questions
 const timeH = document.querySelector('h3');
-let timeSecond = 10;
+let timeSecond = TIMEOUT_SECONDS;
 
 timeH.innerHTML = timeSecond;
 
@@ -255,7 +256,7 @@ function quizFinalResult() {
     let finalScore = document.getElementById("score");
     if (timeSecond === 0 && currentQuestion < questions.length - 1){
         finalScore.innerHTML = getTimeOutMessage(totalScoreAchieved, questions.length);
-       timeSecond =50;
+       timeSecond =TIMEOUT_SECONDS;
     }
 
     else if (totalScoreAchieved > 13) {
@@ -279,7 +280,7 @@ restartButton.addEventListener("click", function() {
     restartQuiz.setAttribute("class", "hide");
     questionBox.setAttribute("class", "question-baskets");
     currentQuestion = 0;
-    timeSecond = 10;
+    timeSecond = TIMEOUT_SECONDS;
     prepareQuestion(currentQuestion);
     document.getElementById("right-answer").innerText = totalScoreAchieved = 0;
     document.getElementById("wrong-answer").innerText = totalScoreAchieved = 0;
