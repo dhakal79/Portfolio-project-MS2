@@ -187,7 +187,9 @@ In order to make sure that design web pages are responsive to all device sizes, 
 
 [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) was used to check for any errors within my HTML pages.
 
-![W3C HTML Validation](./assets/images/W3Chtml.jpg)
+![W3C HTML Validation](./assets/images/w3chtml-index.jpg)
+![W3C HTML Validation](./assets/images/w3chtml-quiz.jpg)
+![W3C HTML Validation](./assets/images/w3chtml-contact.jpg)
 The HTML checker notified me an error in my quiz.html page such as;
 - Consider using the h1 element as a top-level heading only (all h1 elements)
 - Section lacks heading, consider using h2-h6 elements
@@ -200,16 +202,21 @@ The identified errors in both pages were corrected by inspecting in ChromeDevToo
 
 [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) was used to check for any error within my CSS stylesheet. It identified Parse Error which was corrected by identified an issue in the css style sheet. It was found that there was missing curlie bracket. After adding curlie bracket, no errors were found.
 
-![W3C CSS Validation](/assets/images/css-validation.jpg)
+![W3C CSS Validation](./assets/images/css-validation.jpg)
 
 [Jshint validation](https://jshint.com/) was used to validate JavaScript code used in the proejct.
 It identified several errors such as;
 - missing semicolons in many lines
 - warning saying "const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)"
-- TimelineMax is displayed as undefined variable in index page because this class comes from Timeline.min.js library.
+
 
 The identified errors due the missing semicolon was corrected by adding semicolon in the JS code. While, the warning about available Es6 was corrected by clicking cofigure button on top right corner of Jshint and ticking "New JavaScript features (ES6)".
+- Jshint validation for quiz page is below;
+![Jshint Validation](./assets/images/java-quiz.jpg)
 
+- Jshint validation for index page is below;
+- TimelineMax is displayed as undefined variable in index page because this class comes from Timeline.min.js library.
+![Jshint Validation](./assets/images/java-index.jpg)
 
 ## 4.2 Manual Testing
 
@@ -316,7 +323,7 @@ The site was deployed to GitHub pages using the following steps:
   [Go to the top](#table-of-contents)
 ### Code
 * The footer code came from the Love Running projects (taken from my first project)
-* The code for image animation on index.html page taken from youtube video projects https://www.youtube.com/watch?v=AKmoccuRiN4
+* The code for image animation on index.html page taken from youtube video projects https://www.youtube.com/watch?v=AKmoccuRiN4  and https://www.youtube.com/watch?v=GUEB9FogoP8
 * Coding for feedback.html page was inspired from differnt tutorial from https://codeinstitute.net/ 
 * Quiz page design, some css style and javascript code was inspired/taken  from https://github.com/jas-sin82/milestone-project-2 found in google search and modified.
 * The icons in the footer and contact page came from [Font Awesome](https://fontawesome.com/)
