@@ -549,10 +549,10 @@
     }
      .question-baskets {
          transform: translate(-0% ,-0%);
-         top: 27%;
-         left: 14%;
+         top: 32%;
+         left: 16%;
          right: 10%;
-         width: 750px;
+         width: 70%;
     }
      h3{
          margin-left: 350px;
@@ -569,7 +569,7 @@
 }
 /* media querries */
 /*For tablet screen size from 768 -992 px */
- @media screen and (min-width: 768px) and (max-width: 992px) {
+ @media (min-width: 768px) and (max-width: 992px) {
     /*Home page */
      .headline{
          font-size: 25px;
@@ -584,7 +584,7 @@
     }
      .quiz-heading h2{
          margin-left: 10px;
-         margin-top: 20px;
+         margin-top: 30px;
     }
      .quiz_rule {
          transform: translate(-0% ,-0%);
@@ -615,7 +615,7 @@
     }
 }
 /*For screen size max width 767 px */
- @media screen and (max-width: 767px) {
+ @media (max-width: 767px) {
     /*Home page */
      .headline{
          top: 50%;
@@ -648,6 +648,11 @@
          right: 5%;
          width: 290px;
     }
+    .rule{
+        margin-top: 170px;
+        margin-left: 25px;
+        font-size: 15px;
+    }
      h3{
          margin-left: 50px;
          margin-top: 20px;
@@ -658,7 +663,7 @@
          font-size: 14px;
          margin-top: 15px;
          text-align: center;
-         margin-left: 45px;
+         margin-left: 50px;
          margin-right: 25px;
          width: 270px;
     }
