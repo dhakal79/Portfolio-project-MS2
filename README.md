@@ -206,6 +206,7 @@ The identified errors in both pages were corrected by inspecting in ChromeDevToo
 It identified several errors such as;
 - missing semicolons in many lines
 - warning saying "const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)"
+- TimelineMax is displayed as undefined variable in index page because this class comes from Timeline.min.js library.
 
 The identified errors due the missing semicolon was corrected by adding semicolon in the JS code. While, the warning about available Es6 was corrected by clicking cofigure button on top right corner of Jshint and ticking "New JavaScript features (ES6)".
 
