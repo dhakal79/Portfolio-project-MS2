@@ -141,8 +141,6 @@ var answer = document.getElementById("answer");
 //const choiceAnswer = document.getElementsByClassName("answer-option");
 const nextButton = document.getElementById("next-question");
 
-
-
 function getQuestionContent(questions, questionNumber){
     const pTag = document.createElement("p");
     pTag.innerHTML = questions[questionNumber].number + ")" + " " + questions[questionNumber].question;
@@ -172,7 +170,7 @@ let totalScoreAchieved = 0;
 
 // next button function to click to go to next question.
 
-nextButton.setAttribute("disabled", true); //making Next button disable
+nextButton.setAttribute("disabled", true); 
 nextButton.addEventListener("click", function() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
