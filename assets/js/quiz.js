@@ -26,7 +26,7 @@ let timeSecond = TIMEOUT_SECONDS;
 
 timeH.innerHTML = timeSecond;
 
-const countDown = setInterval(() => {
+    setInterval(() => {
     timeSecond--;
     timeH.innerHTML = `${timeSecond} sec time remaining`; 
     if (timeSecond <= 0 ) {
@@ -138,19 +138,21 @@ let questions = [{
 
 const question = document.getElementById("question");
 var answer = document.getElementById("answer");
-const choiceAnswer = document.getElementsByClassName("answer-option");
+//const choiceAnswer = document.getElementsByClassName("answer-option");
 const nextButton = document.getElementById("next-question");
 
 
 
 function getQuestionContent(questions, questionNumber){
-    return document.createElement("p").innerHTML = questions[questionNumber].number + ")" + " " + questions[questionNumber].question;
+    const pTag = document.createElement("p");
+    pTag.innerHTML = questions[questionNumber].number + ")" + " " + questions[questionNumber].question;
+    return pTag.innerHTML; 
 }
 function getAnswerContent(questions, questionNumber){
-    const lastAns = questions[questionNumber].answers[3] ? `<div class="answer-option" >` + `<p>` + questions[questionNumber].answers[3] + `</P></div>` : "";
-    let answerChoice = `<div class="answer-option">` + `<p>` + questions[questionNumber].answers[0] + `</P></div>` +
-        `<div class="answer-option">` + `<p>` + questions[questionNumber].answers[1] + `</P></div>` +
-        `<div class="answer-option"> ` + `<p>` + questions[questionNumber].answers[2] + `</P></div>` +
+    const lastAns = questions[questionNumber].answers[3] ? `<div class="answer-option" > ${questions[questionNumber].answers[3]}</div>` : "";
+    let answerChoice = `<div class="answer-option">${questions[questionNumber].answers[0]} </div>` +
+        `<div class="answer-option"> ${questions[questionNumber].answers[1]}</div>` +
+        `<div class="answer-option"> ${questions[questionNumber].answers[2]}</div>` +
         lastAns;
         return answerChoice;
 }
@@ -158,10 +160,9 @@ function prepareQuestion(event) {
     nextButton.setAttribute("disabled", true);
     question.innerHTML = getQuestionContent(questions, event);
     answer.innerHTML = getAnswerContent (questions, event);
-
-    for (let i = 0; i < choiceAnswer.length; i++) {
-        choiceAnswer[i].setAttribute("onclick", "chooseAnswer(this)");
-    }
+    answer.addEventListener("click", function(event){
+    chooseAnswer(event);
+    });
 }
 
 prepareQuestion(0);
@@ -194,7 +195,8 @@ function disableAllAnswers(answers){
     }
 }
 // select answer option if the answer is correct do x and if the answer is incorrect.
-function chooseAnswer(rightAnswer) {
+function chooseAnswer(selectedAnswer) {
+    const rightAnswer = selectedAnswer.target;
     let givenAnswer = rightAnswer.innerText;
     let goodAnswer = questions[currentQuestion].rightAnswer;
     nextButton.removeAttribute("disabled");
