@@ -13,7 +13,7 @@ tl.fromTo(hero, 1, {
         width: "100%"
     }, {
         width: "80%",
-       // ease: Power2.easeInOut
+        // ease: Power2.easeInOut
     })
     .fromTo(headline, 0.1, {
         opacity: 0,

@@ -11,7 +11,7 @@ let wrongAnswerCount = 0;
 
 startButton.addEventListener("click", function() {
     instructionBox.setAttribute("class", "quiz_rule");
-    });
+});
 
 //  adding addEventfunction ( targeting the start quiz button inside instruction box  )
 //instructionBox.classList.add("hide");
@@ -28,13 +28,13 @@ let timeSecond = TIMEOUT_SECONDS;
 
 timeH.innerHTML = timeSecond;
 
-    setInterval(() => {
+setInterval(() => {
     timeSecond--;
-    timeH.innerHTML = `${timeSecond} sec time remaining`; 
-    if (timeSecond <= 0 ) {
+    timeH.innerHTML = `${timeSecond} sec time remaining`;
+    if (timeSecond <= 0) {
         //clearInterval(countDown);
         quizFinalResult();
-                        
+
     }
 }, 1000);
 
@@ -143,25 +143,27 @@ var answer = document.getElementById("answer");
 //const choiceAnswer = document.getElementsByClassName("answer-option");
 const nextButton = document.getElementById("next-question");
 
-function getQuestionContent(questions, questionNumber){
+function getQuestionContent(questions, questionNumber) {
     const pTag = document.createElement("p");
     pTag.innerHTML = questions[questionNumber].number + ")" + " " + questions[questionNumber].question;
-    return pTag.innerHTML; 
+    return pTag.innerHTML;
 }
-function getAnswerContent(questions, questionNumber){
+
+function getAnswerContent(questions, questionNumber) {
     const lastAns = questions[questionNumber].answers[3] ? `<div class="answer-option" > ${questions[questionNumber].answers[3]}</div>` : "";
     let answerChoice = `<div class="answer-option">${questions[questionNumber].answers[0]} </div>` +
         `<div class="answer-option"> ${questions[questionNumber].answers[1]}</div>` +
         `<div class="answer-option"> ${questions[questionNumber].answers[2]}</div>` +
         lastAns;
-        return answerChoice;
+    return answerChoice;
 }
+
 function prepareQuestion(event) {
     nextButton.setAttribute("disabled", true);
     question.innerHTML = getQuestionContent(questions, event);
-    answer.innerHTML = getAnswerContent (questions, event);
-    answer.addEventListener("click", function(event){
-    chooseAnswer(event);
+    answer.innerHTML = getAnswerContent(questions, event);
+    answer.addEventListener("click", function(event) {
+        chooseAnswer(event);
     });
 }
 
@@ -172,7 +174,7 @@ let totalScoreAchieved = 0;
 
 // next button function to click to go to next question.
 
-nextButton.setAttribute("disabled", true); 
+nextButton.setAttribute("disabled", true);
 nextButton.addEventListener("click", function() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -188,7 +190,7 @@ nextButton.addEventListener("click", function() {
 
 
 // Once answer option is selected other options are disable to select again.
-function disableAllAnswers(answers){
+function disableAllAnswers(answers) {
     let totalAnswersCount = answers.children.length;
     for (let i = 0; i < totalAnswersCount; i++) {
         answers.children[i].classList.add("disable");
@@ -196,28 +198,28 @@ function disableAllAnswers(answers){
 }
 // select answer option if the answer is correct do x and if the answer is incorrect.
 function chooseAnswer(selectedAnswer) {
-    if (selectedAnswer.target.className !== 'answer-option'){
-       return; 
+    if (selectedAnswer.target.className !== 'answer-option') {
+        return;
     }
-    
+
     const rightAnswer = selectedAnswer.target;
     let givenAnswer = rightAnswer.innerText;
     let goodAnswer = questions[currentQuestion].rightAnswer;
     nextButton.removeAttribute("disabled");
     if (givenAnswer === goodAnswer) {
         totalScoreAchieved += 1;
-        correctAnswerCount +=1;
+        correctAnswerCount += 1;
 
         // change color to green and red when answer is correct and incorrect, respectively.
         rightAnswer.classList.add("color1");
         increamentScore(correctAnswerCount);
     } else {
-       rightAnswer.classList.add("color2");
-       wrongAnswerCount +=1;
+        rightAnswer.classList.add("color2");
+        wrongAnswerCount += 1;
         increamentWrongAnswer(wrongAnswerCount);
-        
+
     }
-    disableAllAnswers(answer);  
+    disableAllAnswers(answer);
 }
 
 // increament score for correct answers
@@ -228,7 +230,7 @@ function increamentScore(correctAnswerCount) {
 }
 
 // increament score for wrong answers
-function increamentWrongAnswer(wrongAnswerCount) {    
+function increamentWrongAnswer(wrongAnswerCount) {
     document.getElementById("wrong-answer").innerText = wrongAnswerCount;
 
 }
@@ -236,21 +238,25 @@ function increamentWrongAnswer(wrongAnswerCount) {
 // Final result box.
 
 const restartQuiz = document.getElementById("try");
-function getTimeOutMessage(totalScoreAchieved, totalQuestionCount){
+
+function getTimeOutMessage(totalScoreAchieved, totalQuestionCount) {
     return `<span class="highlight-message"> 
-    Sorry!!! Your time is out! <br> You did not answer all question!! <br> Try again!!<br> Your Score is <br> <span> ${totalScoreAchieved} </span> out of <span> ${totalQuestionCount}</span> !</span>`; 
+    Sorry!!! Your time is out! <br> You did not answer all question!! <br> Try again!!<br> Your Score is <br> <span> ${totalScoreAchieved} </span> out of <span> ${totalQuestionCount}</span> !</span>`;
 }
-function getSuccessfulMessage(totalScoreAchieved, totalQuestionCount){
+
+function getSuccessfulMessage(totalScoreAchieved, totalQuestionCount) {
     return `<span class="highlight-message -1"> 
-    Well done!!! You master the topic!<br> Your Score is <br> <span> ${totalScoreAchieved} </span> out of <span> ${totalQuestionCount}</span> !</span>`; 
+    Well done!!! You master the topic!<br> Your Score is <br> <span> ${totalScoreAchieved} </span> out of <span> ${totalQuestionCount}</span> !</span>`;
 }
-function getNotbadMessage(totalScoreAchieved, totalQuestionCount){
+
+function getNotbadMessage(totalScoreAchieved, totalQuestionCount) {
     return `<span class="highlight-message -2"> 
-    Not too bad!<br> Your Score is <br> <span> ${totalScoreAchieved} </span> out of <span> ${totalQuestionCount}</span> !</span>`; 
+    Not too bad!<br> Your Score is <br> <span> ${totalScoreAchieved} </span> out of <span> ${totalQuestionCount}</span> !</span>`;
 }
-function getFailureMessage(totalScoreAchieved, totalQuestionCount){
+
+function getFailureMessage(totalScoreAchieved, totalQuestionCount) {
     return `<span class="highlight-message -2"> 
-    Too bad ! You need to study more<br> Your Score is <br> <span> ${totalScoreAchieved} </span> out of <span> ${totalQuestionCount}</span> !</span>`; 
+    Too bad ! You need to study more<br> Your Score is <br> <span> ${totalScoreAchieved} </span> out of <span> ${totalQuestionCount}</span> !</span>`;
 }
 
 function quizFinalResult() {
@@ -258,21 +264,19 @@ function quizFinalResult() {
     questionBox.setAttribute("class", "hide");
     restartQuiz.setAttribute("class", "try-quiz-again");
     let finalScore = document.getElementById("score");
-    if (timeSecond === 0 && currentQuestion < questions.length - 1){
+    if (timeSecond === 0 && currentQuestion < questions.length - 1) {
         finalScore.innerHTML = getTimeOutMessage(totalScoreAchieved, questions.length);
-       timeSecond =TIMEOUT_SECONDS;
-    }
-
-    else if (totalScoreAchieved > 13) {
+        timeSecond = TIMEOUT_SECONDS;
+    } else if (totalScoreAchieved > 13) {
         finalScore.innerHTML = getSuccessfulMessage(totalScoreAchieved, questions.length);
-            
-                       
+
+
     } else if (totalScoreAchieved >= 7) {
         finalScore.innerHTML = getNotbadMessage(totalScoreAchieved, questions.length);
-            
+
     } else {
         finalScore.innerHTML = getFailureMessage(totalScoreAchieved, questions.length);
-           
+
     }
 
 }
