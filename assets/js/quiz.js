@@ -284,12 +284,14 @@ function quizFinalResult() {
 // try quiz again button that directs to start of quiz page page
 const restartButton = document.getElementById("try-again");
 restartButton.addEventListener("click", function() {
+    correctAnswerCount = 0;
+    wrongAnswerCount =0;
     restartQuiz.classList.remove("try-quiz");
     restartQuiz.setAttribute("class", "hide");
     questionBox.setAttribute("class", "question-baskets");
     currentQuestion = 0;
     timeSecond = TIMEOUT_SECONDS;
     prepareQuestion(currentQuestion);
-    document.getElementById("right-answer").innerText = correctAnswerCount;
-    document.getElementById("wrong-answer").innerText = wrongAnswerCount;
+    document.getElementById("right-answer").innerText = totalScoreAchieved = 0;
+    document.getElementById("wrong-answer").innerText = totalScoreAchieved = 0;
 });
