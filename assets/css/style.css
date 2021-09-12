@@ -115,9 +115,9 @@ span.fade {
 	color: white;
 	letter-spacing: 2px;
 	position: absolute;
-	top: 190px;
-	justify-content: center;
-	margin-left: 500px;
+	top: 210px;
+	left: calc(50% - 100px);
+	
 }
 
 .quiz-heading h2 {
@@ -181,9 +181,9 @@ span.fade {
 .question-baskets {
 	position: absolute;
 	justify-content: center;
-	transform: translate(-60% ,-60%);
-	top: 62%;
-	left: 55%;
+	transform: translate(-50% ,-50%);
+	top: 55%;
+	left: calc(50% - 5px);
 	border-radius: 20px;
 	background-color: whitesmoke;
 	width: 800px;
@@ -192,9 +192,9 @@ span.fade {
 .question-basket {
 	position: absolute;
 	justify-content: center;
-	transform: translate(-60% ,-60%);
-	top: 50%;
-	left: 55%;
+	transform: translate(-50% ,-50%);
+	top: 55%;
+	left: calc(50% -5px);
 	border-radius: 15px;
 	background-color: whitesmoke;
 	width: 800px;
@@ -513,15 +513,19 @@ h3 {
 	}
     /*quiz page */
 	.quiz-heading {
-		margin-left: 230px;
-		top: 300px;
+		margin: 0 auto;
+		width: 100%;
 	}
-
+	.quiz-heading h2 {
+	font-size: 20px;
+		margin-top: 50px;
+		text-align: center;
+		left: calc(50% - 135px);
+	}
 	.quiz_rule {
 		transform: translate(-0% ,-0%);
 		top: 30%;
-		left: 20%;
-		right: 15%;
+		left: calc(50% - 200px);
 		max-width: 600px;
 	}
 
@@ -563,12 +567,15 @@ h3 {
 	}
     /* Quiz page */
 	.quiz-heading {
-		margin-left: 100px;
+		margin: 0 auto;
+		width: 100%;
 	}
 
 	.quiz-heading h2 {
-		margin-left: 10px;
-		margin-top: 30px;
+		font-size: 20px;
+		margin-top: 50px;
+		text-align: center;
+		left: calc(50% - 135px);
 	}
 
 	.quiz_rule {
@@ -581,8 +588,7 @@ h3 {
 	.question-baskets {
 		transform: translate(-0% ,-0%);
 		top: 30%;
-		left: 15%;
-		right: 5%;
+		left: calc(50% - 225px);
 		width: 550px;
 	}
 
