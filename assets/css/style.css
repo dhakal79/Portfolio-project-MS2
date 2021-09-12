@@ -115,15 +115,16 @@ span.fade {
 	color: white;
 	letter-spacing: 2px;
 	position: absolute;
-	top: 190px;
-	justify-content: center;
-	margin-left: 600px;
+	top: 220px;
+	width: 100%;
+	
 }
 
 .quiz-heading h2 {
 	font-size: 22px;
 	color: white;
 	text-align: center;
+	
 }
 
 .rule {
@@ -525,7 +526,7 @@ h3 {
 	.quiz_rule {
 		transform: translate(-0% ,-0%);
 		top: 30%;
-		left: calc(50% - 100px);
+		left: calc(50% - 190px);
 		max-width: 600px;
 	}
 
@@ -588,7 +589,7 @@ h3 {
 	.question-baskets {
 		transform: translate(-0% ,-0%);
 		top: 30%;
-		left: calc(50% - 225px);
+		left: calc(50% - 275px);
 		width: 550px;
 	}
 
@@ -641,7 +642,7 @@ h3 {
 
 	.question-baskets {
 		transform: translate(-0% ,-0%);
-		top: 18%;
+		top: 22%;
 		left: calc(50% - 145px);
 		width: 290px;
 	}
