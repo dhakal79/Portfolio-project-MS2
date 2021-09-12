@@ -622,8 +622,8 @@ h3 {
 	}
     /* Quiz page */
 	.quiz-heading {
-		margin-left: 0px;
-		width: 350px;
+		margin: 0 auto;
+		width: 100%;
 	}
 
 	.quiz_rule {
@@ -635,9 +635,8 @@ h3 {
 
 	.question-baskets {
 		transform: translate(-0% ,-0%);
-		top: 24%;
-		left: 10%;
-		right: 5%;
+		top: 18%;
+		left: calc(50% - 145px);
 		width: 290px;
 	}
 
@@ -658,9 +657,8 @@ h3 {
 		font-size: 14px;
 		margin-top: 15px;
 		text-align: center;
-		margin-left: 50px;
-		margin-right: 25px;
-		width: 270px;
+		left: calc(50% - 135px);
+		
 	}
 
 	.quiz-rule h2 {
